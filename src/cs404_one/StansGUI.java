@@ -20,8 +20,16 @@ public class StansGUI extends JFrame
     // Stub main method (testing)
     public static void main (String [] args) 
     {    
+        
+        // Stan: This is the way that failed login list should be used from the GUI.
+        // create a new isntance of the login list with the logfile name (fetched thru
+        // the browse dialog), then call the two methods readLogFile() and processLogs()
+        
         FailedLoginList fll = new FailedLoginList ("owncloud.log");
         fll.readLogFile ();
+        
+        // what do we want to do with the results here?
+        // should this function return a list of Strings maybe?
         fll.processLogs ();
     }
 }
