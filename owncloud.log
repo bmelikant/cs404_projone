@@ -1,0 +1,840 @@
+Jun  1 08:18:51 cloudserver ownCloud[4427]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  1 08:18:51 cloudserver ownCloud[4428]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  1 08:18:51 cloudserver ownCloud[30009]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  1 08:18:51 cloudserver ownCloud[7885]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  1 08:18:51 cloudserver ownCloud[27761]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  1 08:40:47 cloudserver ownCloud[30160]: {hipaa} LOGIN: Succeeded [207.255.8.86] (bill.gates@mycompany.com)
+Jun  1 08:58:38 cloudserver ownCloud[30047]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.ballmer@mycompany.com)
+Jun  1 09:16:44 cloudserver ownCloud[4428]: {hipaa} LOGOUT: [207.255.8.86] (bill.gates@mycompany.com)
+Jun  1 09:25:11 cloudserver ownCloud[30349]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun  1 09:59:32 cloudserver ownCloud[30225]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  1 10:25:01 cloudserver ownCloud[30875]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steven.hawking@mycompany.com)
+Jun  1 13:06:12 cloudserver ownCloud[31399]: {hipaa} LOGIN: Succeeded [98.239.230.60] (maggie@dentist.com)
+Jun  1 13:11:10 cloudserver ownCloud[31617]: {hipaa} LOGIN: Succeeded [74.96.242.38] (larry.stooge@mycompany.com)
+Jun  1 13:27:20 cloudserver ownCloud[31401]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun  1 13:35:00 cloudserver ownCloud[31079]: {hipaa} LOGOUT: [98.239.230.60] (maggie@dentist.com)
+Jun  1 13:43:58 cloudserver ownCloud[31877]: {core} Login failed: 'moe.stooge@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun  1 13:43:58 cloudserver ownCloud[31877]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  1 13:44:04 cloudserver ownCloud[31816]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  1 14:45:35 cloudserver ownCloud[32217]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  1 14:57:56 cloudserver ownCloud[30954]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun  1 15:49:07 cloudserver ownCloud[30862]: {hipaa} LOGIN: Succeeded [207.255.7.73] (marissa.mayer@mycompany.com)
+Jun  1 16:30:49 cloudserver ownCloud[32217]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  2 08:20:35 cloudserver ownCloud[30862]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun  2 08:20:37 cloudserver ownCloud[32499]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  2 08:20:37 cloudserver ownCloud[32500]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  2 08:20:37 cloudserver ownCloud[30862]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  2 08:20:37 cloudserver ownCloud[32658]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  2 08:20:37 cloudserver ownCloud[32217]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  2 08:56:03 cloudserver ownCloud[32219]: {hipaa} LOGIN: Succeeded [50.232.26.86] (got.fired@mycompany.com)
+Jun  2 08:59:37 cloudserver ownCloud[32500]: {hipaa} LOGIN: Succeeded [207.255.7.73] (larry.stooge@mycompany.com)
+Jun  2 09:23:06 cloudserver ownCloud[3940]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steven.hawking@mycompany.com)
+Jun  2 10:18:02 cloudserver ownCloud[4203]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun  2 10:38:03 cloudserver ownCloud[4133]: {core} Login failed: 'bill.gates@mycompany.com' (Remote IP: '96.89.51.193', X-Forwarded-For: '')
+Jun  2 10:38:03 cloudserver ownCloud[4133]: {hipaa} LOGIN: Failed - Bad password [96.89.51.193] (bill.gates@mycompany.com)
+Jun  2 10:38:14 cloudserver ownCloud[32219]: {hipaa} LOGIN: Succeeded [96.89.51.193] (bill.gates@mycompany.com)
+Jun  2 10:39:20 cloudserver ownCloud[4133]: {hipaa} LOGOUT: [96.89.51.193] (bill.gates@mycompany.com)
+Jun  2 10:53:52 cloudserver ownCloud[4568]: {hipaa} LOGIN: Succeeded [207.255.7.73] (marissa.mayer@mycompany.com)
+Jun  2 11:09:13 cloudserver ownCloud[4646]: {hipaa} LOGIN: Succeeded [96.89.51.193] (bill.gates@mycompany.com)
+Jun  2 11:10:42 cloudserver ownCloud[4222]: {hipaa} LOGOUT: [96.89.51.193] (bill.gates@mycompany.com)
+Jun  2 11:24:54 cloudserver ownCloud[4572]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun  2 11:41:00 cloudserver ownCloud[4568]: {core} Login failed: 'linux.torvalds@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun  2 11:41:00 cloudserver ownCloud[4568]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun  2 11:41:06 cloudserver ownCloud[4378]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun  2 13:13:03 cloudserver ownCloud[4743]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun  2 13:30:59 cloudserver ownCloud[5253]: {hipaa} LOGIN: Succeeded [50.232.26.86] (got.fired@mycompany.com)
+Jun  2 14:58:32 cloudserver ownCloud[4899]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  2 15:51:01 cloudserver ownCloud[5555]: {hipaa} LOGIN: Succeeded [207.255.7.73] (larry.stooge@mycompany.com)
+Jun  2 15:53:19 cloudserver ownCloud[5555]: {hipaa} LOGIN: Succeeded [67.234.27.180] (lisa@thedevilito.com)
+Jun  2 16:06:23 cloudserver ownCloud[6060]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun  2 16:21:35 cloudserver ownCloud[6043]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun  3 07:59:34 cloudserver ownCloud[10468]: {core} Login failed: 'keri@thedevil.com' (Remote IP: '207.255.7.27', X-Forwarded-For: '')
+Jun  3 07:59:34 cloudserver ownCloud[10468]: {hipaa} LOGIN: Failed - Bad password [207.255.7.27] (keri@thedevil.com)
+Jun  3 08:00:16 cloudserver ownCloud[6386]: {core} Login failed: 'keri@thedevil.com' (Remote IP: '207.255.7.27', X-Forwarded-For: '')
+Jun  3 08:00:16 cloudserver ownCloud[6386]: {hipaa} LOGIN: Failed - Bad password [207.255.7.27] (keri@thedevil.com)
+Jun  3 08:02:16 cloudserver ownCloud[7906]: {core} Login failed: 'keri@thedevil.com' (Remote IP: '207.255.7.27', X-Forwarded-For: '')
+Jun  3 08:02:16 cloudserver ownCloud[7906]: {hipaa} LOGIN: Failed - Bad password [207.255.7.27] (keri@thedevil.com)
+Jun  3 08:02:44 cloudserver ownCloud[10468]: {hipaa} LOGIN: Succeeded [207.255.7.27] (keri@thedevil.com)
+Jun  3 08:22:36 cloudserver ownCloud[10467]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun  3 08:22:37 cloudserver ownCloud[10562]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  3 08:22:37 cloudserver ownCloud[10680]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  3 08:22:37 cloudserver ownCloud[10679]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  3 08:22:37 cloudserver ownCloud[7906]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  3 08:22:38 cloudserver ownCloud[10468]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  3 08:34:13 cloudserver ownCloud[10746]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  3 08:55:43 cloudserver ownCloud[7906]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun  3 09:30:58 cloudserver ownCloud[10978]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun  3 09:30:59 cloudserver ownCloud[11101]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  3 09:30:59 cloudserver ownCloud[10976]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  3 09:30:59 cloudserver ownCloud[10978]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  3 09:31:00 cloudserver ownCloud[10466]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  3 09:31:00 cloudserver ownCloud[11102]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  3 09:32:23 cloudserver ownCloud[10467]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun  3 09:37:10 cloudserver ownCloud[10679]: {hipaa} LOGIN: Succeeded [24.145.24.22] (steven.hawking@mycompany.com)
+Jun  3 10:53:54 cloudserver ownCloud[11186]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun  3 11:26:23 cloudserver ownCloud[11421]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun  3 11:41:38 cloudserver ownCloud[11953]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  3 11:46:51 cloudserver ownCloud[11953]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun  3 12:02:55 cloudserver ownCloud[12229]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun  3 13:52:21 cloudserver ownCloud[12229]: {hipaa} LOGIN: Succeeded [50.232.26.86] (got.fired@mycompany.com)
+Jun  3 14:38:37 cloudserver ownCloud[13309]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  3 14:55:18 cloudserver ownCloud[13261]: {hipaa} LOGIN: Succeeded [207.255.7.73] (larry.stooge@mycompany.com)
+Jun  3 15:19:52 cloudserver ownCloud[11976]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun  3 16:32:38 cloudserver ownCloud[12915]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  4 08:28:54 cloudserver ownCloud[14267]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  4 09:33:36 cloudserver ownCloud[14917]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun  4 09:51:51 cloudserver ownCloud[14917]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  4 10:37:01 cloudserver ownCloud[19645]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  4 11:27:27 cloudserver ownCloud[19645]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun  4 13:20:15 cloudserver ownCloud[20818]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  4 13:52:05 cloudserver ownCloud[22104]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun  4 14:12:20 cloudserver ownCloud[14917]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  4 14:24:02 cloudserver ownCloud[20818]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  4 16:09:45 cloudserver ownCloud[20879]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun  4 16:30:55 cloudserver ownCloud[14917]: {hipaa} LOGIN: Succeeded [207.255.7.73] (marissa.mayer@mycompany.com)
+Jun  5 07:13:04 cloudserver ownCloud[22399]: {hipaa} LOGIN: Succeeded [71.60.161.235] (lisa@thedevilito.com)
+Jun  5 07:15:06 cloudserver ownCloud[22399]: {hipaa} LOGIN: Succeeded [67.234.27.180] (lisa@thedevilito.com)
+Jun  5 09:59:34 cloudserver ownCloud[24841]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun  5 10:23:09 cloudserver ownCloud[28200]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun  5 10:26:42 cloudserver ownCloud[28704]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun  5 10:28:05 cloudserver ownCloud[29287]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  5 11:02:14 cloudserver ownCloud[23242]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  5 11:15:27 cloudserver ownCloud[29317]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun  5 11:18:02 cloudserver ownCloud[22399]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  5 11:20:37 cloudserver ownCloud[22399]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  5 11:20:54 cloudserver ownCloud[29640]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  5 11:29:16 cloudserver ownCloud[29641]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  5 11:30:43 cloudserver ownCloud[29641]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  5 11:34:07 cloudserver ownCloud[29729]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  5 11:47:41 cloudserver ownCloud[29317]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  5 11:51:52 cloudserver ownCloud[29728]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  5 11:52:51 cloudserver ownCloud[29728]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun  5 11:53:54 cloudserver ownCloud[29930]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun  5 11:55:15 cloudserver ownCloud[29959]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  5 11:58:02 cloudserver ownCloud[29930]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  5 12:23:46 cloudserver ownCloud[29800]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  5 12:39:02 cloudserver ownCloud[29800]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  5 16:13:47 cloudserver ownCloud[31500]: {hipaa} LOGIN: Succeeded [24.145.26.41] (some.indian.guy@mycompany.com)
+Jun  5 16:32:48 cloudserver ownCloud[31501]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun  5 16:54:54 cloudserver ownCloud[31841]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  6 00:07:16 cloudserver ownCloud[31841]: {hipaa} LOGIN: Succeeded [173.189.139.162] (moe.stooge@mycompany.com)
+Jun  8 07:32:01 cloudserver ownCloud[11865]: {core} Login failed: 'stuxnet@natanz.org' (Remote IP: '216.220.86.66', X-Forwarded-For: '')
+Jun  8 07:32:01 cloudserver ownCloud[11865]: {hipaa} LOGIN: Failed - Bad password [216.220.86.66] (stuxnet@natanz.org)
+Jun  8 07:32:31 cloudserver ownCloud[12554]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun  8 07:38:55 cloudserver ownCloud[11866]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun  8 07:39:05 cloudserver ownCloud[11865]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun  8 09:08:10 cloudserver ownCloud[17231]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  8 09:28:26 cloudserver ownCloud[12555]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun  8 09:29:23 cloudserver ownCloud[11863]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun  8 09:32:17 cloudserver ownCloud[20144]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  8 09:56:24 cloudserver ownCloud[20144]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.ballmer@mycompany.com)
+Jun  8 10:15:04 cloudserver ownCloud[20441]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  8 11:55:00 cloudserver ownCloud[21671]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  8 12:16:28 cloudserver ownCloud[21984]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  8 12:42:52 cloudserver ownCloud[21832]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  8 13:03:40 cloudserver ownCloud[22421]: {core} Login failed: 'stuxnet@natanz.org' (Remote IP: '216.220.86.66', X-Forwarded-For: '')
+Jun  8 13:03:40 cloudserver ownCloud[22421]: {hipaa} LOGIN: Failed - Bad password [216.220.86.66] (stuxnet@natanz.org)
+Jun  8 13:03:45 cloudserver ownCloud[22421]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun  8 13:14:08 cloudserver ownCloud[22441]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun  8 13:33:49 cloudserver ownCloud[22420]: {hipaa} LOGIN: Succeeded [24.145.20.94] (bill.gates@mycompany.com)
+Jun  8 13:58:14 cloudserver ownCloud[22761]: {hipaa} LOGOUT: [24.145.20.94] (bill.gates@mycompany.com)
+Jun  8 14:30:34 cloudserver ownCloud[22763]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun  8 15:46:35 cloudserver ownCloud[22825]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  8 16:25:15 cloudserver ownCloud[22763]: {hipaa} LOGIN: Succeeded [207.255.7.73] (joe.schmoe@mycompany.com)
+Jun  8 18:36:59 cloudserver ownCloud[22825]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  9 09:11:42 cloudserver ownCloud[22420]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  9 09:13:17 cloudserver ownCloud[22347]: {core} Login failed: 'steve.jobs@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun  9 09:13:17 cloudserver ownCloud[22347]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (steve.jobs@mycompany.com)
+Jun  9 09:13:21 cloudserver ownCloud[22347]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.jobs@mycompany.com)
+Jun  9 09:42:30 cloudserver ownCloud[24862]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun  9 09:58:32 cloudserver ownCloud[30511]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  9 09:59:32 cloudserver ownCloud[30479]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun  9 11:21:23 cloudserver ownCloud[30861]: {core} Login failed: 'bill.gates@mycompany.com' (Remote IP: '71.240.223.130', X-Forwarded-For: '')
+Jun  9 11:21:23 cloudserver ownCloud[30861]: {hipaa} LOGIN: Failed - Bad password [71.240.223.130] (bill.gates@mycompany.com)
+Jun  9 11:21:48 cloudserver ownCloud[31646]: {hipaa} LOGIN: Succeeded [71.240.223.130] (bill.gates@mycompany.com)
+Jun  9 11:28:53 cloudserver ownCloud[31647]: {hipaa} LOGOUT: [71.240.223.130] (bill.gates@mycompany.com)
+Jun  9 11:47:03 cloudserver ownCloud[31859]: {hipaa} LOGIN: Succeeded [207.255.238.49] (bill.gates@mycompany.com)
+Jun  9 12:01:07 cloudserver ownCloud[30511]: {hipaa} LOGOUT: [207.255.238.49] (bill.gates@mycompany.com)
+Jun  9 13:10:12 cloudserver ownCloud[31859]: {hipaa} LOGIN: Succeeded [23.25.81.209] (bill.gates@mycompany.com)
+Jun  9 13:17:57 cloudserver ownCloud[31859]: {hipaa} LOGOUT: [23.25.81.209] (bill.gates@mycompany.com)
+Jun  9 13:30:53 cloudserver ownCloud[529]: {hipaa} LOGIN: Succeeded [50.248.86.85] (bill.gates@mycompany.com)
+Jun  9 13:34:00 cloudserver ownCloud[31857]: {hipaa} LOGOUT: [50.248.86.85] (bill.gates@mycompany.com)
+Jun  9 14:30:06 cloudserver ownCloud[30861]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  9 14:40:38 cloudserver ownCloud[32502]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.ballmer@mycompany.com)
+Jun  9 14:46:15 cloudserver ownCloud[530]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun  9 15:07:51 cloudserver ownCloud[1061]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  9 15:22:27 cloudserver ownCloud[1549]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steven.hawking@mycompany.com)
+Jun  9 17:24:34 cloudserver ownCloud[2030]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  9 18:33:19 cloudserver ownCloud[2558]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  9 19:25:29 cloudserver ownCloud[2626]: {core} Login failed: 'brian@apple.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun  9 19:25:29 cloudserver ownCloud[2626]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (brian@apple.com)
+Jun  9 19:25:32 cloudserver ownCloud[2626]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  9 21:15:13 cloudserver ownCloud[3767]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun  9 22:12:43 cloudserver ownCloud[2509]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun  9 23:20:54 cloudserver ownCloud[3613]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 10 08:12:55 cloudserver ownCloud[1742]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 10 08:12:57 cloudserver ownCloud[2509]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 08:12:57 cloudserver ownCloud[3613]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 08:12:57 cloudserver ownCloud[32502]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 08:12:57 cloudserver ownCloud[1742]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 08:12:57 cloudserver ownCloud[5579]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 08:24:52 cloudserver ownCloud[5044]: {hipaa} LOGIN: Succeeded [50.232.26.86] (got.fired@mycompany.com)
+Jun 10 08:48:50 cloudserver ownCloud[5044]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 10 09:56:09 cloudserver ownCloud[9917]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 10 10:01:48 cloudserver ownCloud[10079]: {hipaa} LOGIN: Succeeded [207.255.7.73] (larry.stooge@mycompany.com)
+Jun 10 11:35:02 cloudserver ownCloud[9877]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 10 12:04:36 cloudserver ownCloud[32502]: {core} Login failed: 'linux.torvalds@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 10 12:04:36 cloudserver ownCloud[32502]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 10 12:04:40 cloudserver ownCloud[32502]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 10 14:18:07 cloudserver ownCloud[11604]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 10 14:19:02 cloudserver ownCloud[13139]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 10 14:21:16 cloudserver ownCloud[13001]: {hipaa} LOGIN: Succeeded [207.255.7.73] (marissa.mayer@mycompany.com)
+Jun 10 14:22:40 cloudserver ownCloud[12000]: {hipaa} LOGIN: Succeeded [72.28.195.201] (linux.torvalds@mycompany.com)
+Jun 10 14:22:46 cloudserver ownCloud[13162]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:22:46 cloudserver ownCloud[12000]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:22:46 cloudserver ownCloud[12158]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:22:46 cloudserver ownCloud[13240]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:22:46 cloudserver ownCloud[13172]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:28:31 cloudserver ownCloud[13317]: {hipaa} LOGIN: Succeeded [75.146.70.177] (linux.torvalds@mycompany.com)
+Jun 10 14:28:33 cloudserver ownCloud[11820]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:28:33 cloudserver ownCloud[13241]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:28:33 cloudserver ownCloud[12000]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:28:33 cloudserver ownCloud[12158]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:28:33 cloudserver ownCloud[13240]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:50:51 cloudserver ownCloud[13001]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 10 14:50:53 cloudserver ownCloud[13317]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:50:53 cloudserver ownCloud[11820]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:50:53 cloudserver ownCloud[13241]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:50:53 cloudserver ownCloud[13001]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 14:50:53 cloudserver ownCloud[12000]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 15:10:43 cloudserver ownCloud[13716]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 10 15:57:23 cloudserver ownCloud[13317]: {hipaa} LOGIN: Succeeded [207.255.7.73] (larry.stooge@mycompany.com)
+Jun 10 16:22:36 cloudserver ownCloud[14059]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 10 16:22:37 cloudserver ownCloud[14465]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 16:22:37 cloudserver ownCloud[14466]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 16:22:37 cloudserver ownCloud[13589]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 16:22:37 cloudserver ownCloud[11820]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 16:22:37 cloudserver ownCloud[13716]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 10 16:35:49 cloudserver ownCloud[14531]: {files} Upload error: 3 - The uploaded file was only partially uploaded
+Jun 10 20:36:21 cloudserver ownCloud[14463]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 11 07:15:31 cloudserver ownCloud[11820]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 11 08:10:39 cloudserver ownCloud[13716]: {hipaa} LOGIN: Succeeded [207.255.7.73] (joe.schmoe@mycompany.com)
+Jun 11 09:09:29 cloudserver ownCloud[17988]: {core} Login failed: 'stuxnet@natanz.org' (Remote IP: '216.220.86.66', X-Forwarded-For: '')
+Jun 11 09:09:29 cloudserver ownCloud[17988]: {hipaa} LOGIN: Failed - Bad password [216.220.86.66] (stuxnet@natanz.org)
+Jun 11 09:09:34 cloudserver ownCloud[17988]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun 11 09:45:19 cloudserver ownCloud[22926]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun 11 09:45:41 cloudserver ownCloud[22750]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun 11 09:51:22 cloudserver ownCloud[22750]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 11 09:51:24 cloudserver ownCloud[13716]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 11 09:51:24 cloudserver ownCloud[22586]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 11 09:51:24 cloudserver ownCloud[23186]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 11 09:51:24 cloudserver ownCloud[22195]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 11 09:51:24 cloudserver ownCloud[21794]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 11 09:51:24 cloudserver ownCloud[17750]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 11 10:00:31 cloudserver ownCloud[23217]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun 11 10:01:33 cloudserver ownCloud[13716]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun 11 10:06:20 cloudserver ownCloud[23412]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 11 10:35:00 cloudserver ownCloud[17751]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun 11 10:39:17 cloudserver ownCloud[23589]: {hipaa} LOGIN: Succeeded [207.255.7.73] (joe.schmoe@mycompany.com)
+Jun 11 10:46:03 cloudserver ownCloud[23348]: {core} Login failed: 'stuxnet@natanz.org' (Remote IP: '216.220.86.66', X-Forwarded-For: '')
+Jun 11 10:46:03 cloudserver ownCloud[23348]: {hipaa} LOGIN: Failed - Bad password [216.220.86.66] (stuxnet@natanz.org)
+Jun 11 10:46:08 cloudserver ownCloud[23348]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun 11 10:47:44 cloudserver ownCloud[17750]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun 11 11:31:55 cloudserver ownCloud[24106]: {hipaa} LOGIN: Succeeded [50.232.26.86] (got.fired@mycompany.com)
+Jun 11 11:37:24 cloudserver ownCloud[24106]: {hipaa} LOGIN: Succeeded [66.37.63.194] (some.indian.guy@mycompany.com)
+Jun 11 12:26:59 cloudserver ownCloud[25139]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 11 14:08:01 cloudserver ownCloud[26136]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 11 14:46:10 cloudserver ownCloud[26518]: {hipaa} LOGIN: Succeeded [207.255.7.73] (some.indian.guy@mycompany.com)
+Jun 11 14:52:38 cloudserver ownCloud[26077]: {hipaa} LOGIN: Succeeded [96.89.40.113] (joe.schmoe@mycompany.com)
+Jun 11 15:59:04 cloudserver ownCloud[26521]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 11 16:10:50 cloudserver ownCloud[27177]: {core} Login failed: 'moe.stooge@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 11 16:10:50 cloudserver ownCloud[27177]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 11 16:10:55 cloudserver ownCloud[27182]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 11 16:14:45 cloudserver ownCloud[27182]: {hipaa} LOGIN: Succeeded [50.232.26.86] (got.fired@mycompany.com)
+Jun 11 20:54:00 cloudserver ownCloud[27910]: {hipaa} LOGIN: Succeeded [98.236.220.232] (linux.torvalds@mycompany.com)
+Jun 11 20:54:02 cloudserver ownCloud[27757]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 11 20:54:02 cloudserver ownCloud[30099]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 11 20:54:02 cloudserver ownCloud[27764]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 11 20:54:02 cloudserver ownCloud[27182]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 11 20:54:02 cloudserver ownCloud[27401]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 12 08:02:49 cloudserver ownCloud[4024]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun 12 08:16:44 cloudserver ownCloud[2974]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 12 08:26:33 cloudserver ownCloud[4164]: {hipaa} LOGIN: Succeeded [108.48.5.10] (larry.stooge@mycompany.com)
+Jun 12 09:13:56 cloudserver ownCloud[2986]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 12 09:34:55 cloudserver ownCloud[2973]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.ballmer@mycompany.com)
+Jun 12 10:11:24 cloudserver ownCloud[4672]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 12 10:16:21 cloudserver ownCloud[4404]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 12 10:16:35 cloudserver ownCloud[5439]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun 12 10:27:08 cloudserver ownCloud[4405]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun 12 10:33:34 cloudserver ownCloud[5580]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 12 10:33:34 cloudserver ownCloud[5581]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 12 10:33:34 cloudserver ownCloud[5438]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 12 10:33:34 cloudserver ownCloud[2973]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 12 10:33:34 cloudserver ownCloud[5046]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 12 12:46:01 cloudserver ownCloud[4773]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 12 14:17:54 cloudserver ownCloud[5900]: {hipaa} LOGOUT: [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 12 14:18:01 cloudserver ownCloud[4773]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 12 14:43:03 cloudserver ownCloud[5900]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 13 08:19:39 cloudserver ownCloud[18054]: {hipaa} LOGIN: Succeeded [108.48.5.10] (larry.stooge@mycompany.com)
+Jun 15 00:07:17 cloudserver ownCloud[7254]: {hipaa} LOGIN: Succeeded [209.203.205.165] (bill.gates@mycompany.com)
+Jun 15 08:10:07 cloudserver ownCloud[7255]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 15 08:10:09 cloudserver ownCloud[7255]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 08:10:09 cloudserver ownCloud[11769]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 08:10:09 cloudserver ownCloud[30331]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 08:10:09 cloudserver ownCloud[5366]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 08:10:09 cloudserver ownCloud[3995]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 08:19:43 cloudserver ownCloud[30331]: {hipaa} LOGIN: Succeeded [50.232.26.86] (got.fired@mycompany.com)
+Jun 15 08:35:09 cloudserver ownCloud[5365]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 15 09:04:28 cloudserver ownCloud[12192]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 15 09:32:24 cloudserver ownCloud[12238]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 15 10:32:15 cloudserver ownCloud[12123]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 15 11:01:15 cloudserver ownCloud[7259]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 15 11:24:53 cloudserver ownCloud[12192]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steven.hawking@mycompany.com)
+Jun 15 11:55:59 cloudserver ownCloud[14482]: {hipaa} LOGIN: Succeeded [98.236.223.111] (linux.torvalds@mycompany.com)
+Jun 15 11:56:01 cloudserver ownCloud[13664]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 11:56:01 cloudserver ownCloud[13607]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 11:56:01 cloudserver ownCloud[14482]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 11:56:01 cloudserver ownCloud[14483]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 11:56:01 cloudserver ownCloud[12976]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 13:02:58 cloudserver ownCloud[12192]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 15 13:23:20 cloudserver ownCloud[12976]: {hipaa} LOGIN: Succeeded [98.236.220.232] (linux.torvalds@mycompany.com)
+Jun 15 13:23:22 cloudserver ownCloud[15146]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 13:23:22 cloudserver ownCloud[15205]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 13:23:22 cloudserver ownCloud[12192]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 13:23:22 cloudserver ownCloud[12976]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 13:23:22 cloudserver ownCloud[14490]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 15 15:47:11 cloudserver ownCloud[14483]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 15 20:00:07 cloudserver ownCloud[7259]: {hipaa} LOGIN: Succeeded [50.232.26.86] (jessica.rabbit@mycompany.com)
+Jun 15 20:55:15 cloudserver ownCloud[15422]: {hipaa} LOGIN: Succeeded [50.232.26.86] (jessica.rabbit@mycompany.com)
+Jun 16 07:54:52 cloudserver ownCloud[14483]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 16 08:18:25 cloudserver ownCloud[19720]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 16 08:18:27 cloudserver ownCloud[19225]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 16 08:18:27 cloudserver ownCloud[16917]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 16 08:18:27 cloudserver ownCloud[25674]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 16 08:18:27 cloudserver ownCloud[14483]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 16 08:18:27 cloudserver ownCloud[19720]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 16 08:30:34 cloudserver ownCloud[19225]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 16 09:12:10 cloudserver ownCloud[25816]: {core} Login failed: 'joe.schmoe@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 16 09:12:10 cloudserver ownCloud[25816]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 16 09:12:17 cloudserver ownCloud[26056]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 16 09:17:22 cloudserver ownCloud[15422]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 16 09:51:40 cloudserver ownCloud[25816]: {hipaa} LOGIN: Succeeded [207.255.7.73] (marissa.mayer@mycompany.com)
+Jun 16 12:00:41 cloudserver ownCloud[26533]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 16 12:36:26 cloudserver ownCloud[27119]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 16 14:11:44 cloudserver ownCloud[28497]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 16 14:28:05 cloudserver ownCloud[30012]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun 16 14:36:38 cloudserver ownCloud[27119]: {hipaa} LOGIN: Succeeded [73.174.191.86] (bill.gates@mycompany.com)
+Jun 16 14:59:48 cloudserver ownCloud[30379]: {hipaa} LOGIN: Succeeded [73.174.191.86] (bill.gates@mycompany.com)
+Jun 16 15:02:52 cloudserver ownCloud[30379]: {hipaa} LOGIN: Succeeded [50.232.26.86] (jessica.rabbit@mycompany.com)
+Jun 16 15:13:45 cloudserver ownCloud[30522]: {hipaa} LOGIN: Succeeded [73.174.191.86] (bill.gates@mycompany.com)
+Jun 16 15:29:50 cloudserver ownCloud[30848]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 16 15:37:49 cloudserver ownCloud[28871]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 16 16:17:31 cloudserver ownCloud[31422]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 16 21:16:48 cloudserver ownCloud[941]: {core} Login failed: 'joe.schmoe@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 16 21:16:48 cloudserver ownCloud[941]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 16 21:16:58 cloudserver ownCloud[31558]: {core} Login failed: 'joe.schmoe@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 16 21:16:58 cloudserver ownCloud[31558]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 16 21:17:04 cloudserver ownCloud[31551]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 16 21:51:50 cloudserver ownCloud[941]: {hipaa} LOGIN: Succeeded [209.203.205.165] (bill.gates@mycompany.com)
+Jun 17 07:19:10 cloudserver ownCloud[1898]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 17 08:46:47 cloudserver ownCloud[9321]: {core} Login failed: 'joe.schmoe@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 17 08:46:47 cloudserver ownCloud[9321]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 17 08:46:53 cloudserver ownCloud[1898]: {core} Login failed: 'joe.schmoe@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 17 08:46:53 cloudserver ownCloud[1898]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 17 08:46:59 cloudserver ownCloud[9220]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 17 08:54:22 cloudserver ownCloud[9220]: {hipaa} LOGIN: Succeeded [50.232.26.86] (admin)
+Jun 17 08:54:47 cloudserver ownCloud[9714]: {hipaa} LOGOUT: [50.232.26.86] (admin)
+Jun 17 08:55:04 cloudserver ownCloud[9718]: {hipaa} LOGIN: Succeeded [50.232.26.86] (support@mycompany.com)
+Jun 17 08:55:18 cloudserver ownCloud[9321]: {PHP} Undefined index: path at /var/www/apps/files_sharing/lib/share/folder.php#38
+Jun 17 08:55:18 cloudserver ownCloud[9321]: {PHP} Undefined index: path at /var/www/apps/files_sharing/lib/share/folder.php#38
+Jun 17 08:55:27 cloudserver ownCloud[8502]: {PHP} Undefined index: path at /var/www/apps/files_sharing/lib/share/folder.php#38
+Jun 17 08:55:27 cloudserver ownCloud[8502]: {PHP} Undefined index: path at /var/www/apps/files_sharing/lib/share/folder.php#38
+Jun 17 09:16:05 cloudserver ownCloud[9321]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 17 09:16:06 cloudserver ownCloud[8876]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 17 09:16:07 cloudserver ownCloud[8646]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 17 09:16:07 cloudserver ownCloud[31411]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 17 09:16:07 cloudserver ownCloud[9849]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 17 09:16:07 cloudserver ownCloud[9321]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 17 09:16:31 cloudserver ownCloud[9719]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 17 09:26:15 cloudserver ownCloud[10137]: {hipaa} LOGOUT: [50.232.26.86] (support@mycompany.com)
+Jun 17 09:26:19 cloudserver ownCloud[10137]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 17 09:35:58 cloudserver ownCloud[10286]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 17 10:28:04 cloudserver ownCloud[10131]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 17 11:25:39 cloudserver ownCloud[10286]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 17 11:47:57 cloudserver ownCloud[10286]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 17 14:09:11 cloudserver ownCloud[8646]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 17 14:36:50 cloudserver ownCloud[8876]: {hipaa} LOGIN: Succeeded [24.145.24.22] (steven.hawking@mycompany.com)
+Jun 17 16:17:14 cloudserver ownCloud[9321]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 17 17:33:24 cloudserver ownCloud[13922]: {core} Login failed: 'jack@lawfirm.com' (Remote IP: '199.7.101.236', X-Forwarded-For: '')
+Jun 17 17:33:24 cloudserver ownCloud[13922]: {hipaa} LOGIN: Failed - Bad password [199.7.101.236] (jack@lawfirm.com)
+Jun 17 17:33:50 cloudserver ownCloud[15084]: {core} Login failed: 'jack@lawfirm.com' (Remote IP: '199.7.101.236', X-Forwarded-For: '')
+Jun 17 17:33:50 cloudserver ownCloud[15084]: {hipaa} LOGIN: Failed - Bad password [199.7.101.236] (jack@lawfirm.com)
+Jun 17 17:34:03 cloudserver ownCloud[10967]: {core} Login failed: 'jack@lawfirm.com' (Remote IP: '199.7.101.236', X-Forwarded-For: '')
+Jun 17 17:34:03 cloudserver ownCloud[10967]: {hipaa} LOGIN: Failed - Bad password [199.7.101.236] (jack@lawfirm.com)
+Jun 17 17:34:17 cloudserver ownCloud[14838]: {core} Login failed: 'jack@lawfirm.com' (Remote IP: '199.7.101.236', X-Forwarded-For: '')
+Jun 17 17:34:17 cloudserver ownCloud[14838]: {hipaa} LOGIN: Failed - Bad password [199.7.101.236] (jack@lawfirm.com)
+Jun 17 17:35:02 cloudserver ownCloud[13922]: {core} Login failed: 'jack@lawfirm.com' (Remote IP: '199.7.101.236', X-Forwarded-For: '')
+Jun 17 17:35:02 cloudserver ownCloud[13922]: {hipaa} LOGIN: Failed - Bad password [199.7.101.236] (jack@lawfirm.com)
+Jun 17 17:35:15 cloudserver ownCloud[15946]: {core} Login failed: 'jack@lawfirm.com' (Remote IP: '199.7.101.236', X-Forwarded-For: '')
+Jun 17 17:35:15 cloudserver ownCloud[15946]: {hipaa} LOGIN: Failed - Bad password [199.7.101.236] (jack@lawfirm.com)
+Jun 17 17:40:25 cloudserver ownCloud[15084]: {hipaa} LOGOUT: [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 17 17:40:29 cloudserver ownCloud[16011]: {hipaa} LOGIN: Succeeded [50.232.26.86] (admin)
+Jun 17 17:42:48 cloudserver ownCloud[15084]: {hipaa} LOGIN: Succeeded [199.7.101.236] (jack@lawfirm.com)
+Jun 17 17:43:22 cloudserver ownCloud[16120]: {hipaa} LOGOUT: [50.232.26.86] (admin)
+Jun 17 17:46:28 cloudserver ownCloud[16115]: {hipaa} LOGOUT: [199.7.101.236] (jack@lawfirm.com)
+Jun 17 20:46:21 cloudserver ownCloud[16112]: {hipaa} LOGIN: Succeeded [50.232.26.86] (jessica.rabbit@mycompany.com)
+Jun 17 21:03:41 cloudserver ownCloud[16011]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 17 22:56:35 cloudserver ownCloud[19206]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 18 08:26:34 cloudserver ownCloud[29081]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 18 09:45:50 cloudserver ownCloud[29413]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.ballmer@mycompany.com)
+Jun 18 10:00:07 cloudserver ownCloud[21489]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 18 10:46:46 cloudserver ownCloud[31490]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 18 11:17:32 cloudserver ownCloud[19751]: {hipaa} LOGIN: Succeeded [50.232.26.86] (got.fired@mycompany.com)
+Jun 18 11:25:56 cloudserver ownCloud[32227]: {core} Login failed: 'art@googlesmail.com' (Remote IP: '150.108.238.39', X-Forwarded-For: '')
+Jun 18 11:25:56 cloudserver ownCloud[32227]: {hipaa} LOGIN: Failed - Bad password [150.108.238.39] (art@googlesmail.com)
+Jun 18 11:26:04 cloudserver ownCloud[32295]: {core} Login failed: 'art@googlesmail.com' (Remote IP: '150.108.238.39', X-Forwarded-For: '')
+Jun 18 11:26:04 cloudserver ownCloud[32295]: {hipaa} LOGIN: Failed - Bad password [150.108.238.39] (art@googlesmail.com)
+Jun 18 11:26:19 cloudserver ownCloud[32226]: {core} Login failed: 'art@googlesmail.com' (Remote IP: '150.108.238.39', X-Forwarded-For: '')
+Jun 18 11:26:19 cloudserver ownCloud[32226]: {hipaa} LOGIN: Failed - Bad password [150.108.238.39] (art@googlesmail.com)
+Jun 18 11:26:21 cloudserver ownCloud[32226]: {core} Login failed: 'art@googlesmail.com' (Remote IP: '150.108.238.39', X-Forwarded-For: '')
+Jun 18 11:26:21 cloudserver ownCloud[32226]: {hipaa} LOGIN: Failed - Bad password [150.108.238.39] (art@googlesmail.com)
+Jun 18 11:26:22 cloudserver ownCloud[32226]: {core} Login failed: 'art@googlesmail.com' (Remote IP: '150.108.238.39', X-Forwarded-For: '')
+Jun 18 11:26:22 cloudserver ownCloud[32226]: {hipaa} LOGIN: Failed - Bad password [150.108.238.39] (art@googlesmail.com)
+Jun 18 11:27:05 cloudserver ownCloud[19751]: {core} Login failed: 'art@googlesmail.com' (Remote IP: '150.108.238.39', X-Forwarded-For: '')
+Jun 18 11:27:05 cloudserver ownCloud[19751]: {hipaa} LOGIN: Failed - Bad password [150.108.238.39] (art@googlesmail.com)
+Jun 18 11:27:10 cloudserver ownCloud[19751]: {hipaa} LOGIN: Succeeded [150.108.238.39] (art@googlesmail.com)
+Jun 18 12:56:00 cloudserver ownCloud[19117]: {core} Login failed: 'andy@microsoft.com' (Remote IP: '98.236.221.201', X-Forwarded-For: '')
+Jun 18 12:56:00 cloudserver ownCloud[19117]: {hipaa} LOGIN: Failed - Bad password [98.236.221.201] (andy@microsoft.com)
+Jun 18 12:56:36 cloudserver ownCloud[32296]: {core} Login failed: 'andy@microsoft.com' (Remote IP: '98.236.221.201', X-Forwarded-For: '')
+Jun 18 12:56:36 cloudserver ownCloud[32296]: {hipaa} LOGIN: Failed - Bad password [98.236.221.201] (andy@microsoft.com)
+Jun 18 12:56:43 cloudserver ownCloud[31480]: {hipaa} LOGIN: Succeeded [98.236.221.201] (andy@microsoft.com)
+Jun 18 13:00:27 cloudserver ownCloud[1388]: {hipaa} LOGIN: Succeeded [98.236.221.201] (andy@microsoft.com)
+Jun 18 13:42:37 cloudserver ownCloud[1388]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 18 13:42:39 cloudserver ownCloud[1359]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 18 13:42:39 cloudserver ownCloud[1388]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 18 13:42:39 cloudserver ownCloud[32296]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 18 13:42:39 cloudserver ownCloud[1547]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 18 13:42:39 cloudserver ownCloud[1360]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 18 14:29:12 cloudserver ownCloud[1360]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 18 15:01:19 cloudserver ownCloud[19751]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 18 15:10:16 cloudserver ownCloud[19751]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 18 15:24:34 cloudserver ownCloud[32296]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 18 15:27:08 cloudserver ownCloud[3864]: {core} Login failed: 'moe.stooge@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 18 15:27:08 cloudserver ownCloud[3864]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 18 15:27:14 cloudserver ownCloud[32226]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 18 15:59:38 cloudserver ownCloud[32226]: {hipaa} LOGOUT: [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 18 15:59:40 cloudserver ownCloud[1360]: {hipaa} LOGIN: Succeeded [50.232.26.86] (admin)
+Jun 18 16:00:50 cloudserver ownCloud[3864]: {hipaa} LOGOUT: [50.232.26.86] (admin)
+Jun 18 16:00:56 cloudserver ownCloud[1360]: {hipaa} LOGIN: Succeeded [50.232.26.86] (support@mycompany.com)
+Jun 18 16:01:11 cloudserver ownCloud[4816]: {PHP} Undefined index: path at /var/www/apps/files_sharing/lib/share/folder.php#38
+Jun 18 16:02:24  ownCloud[4816]: last message repeated 3 times
+Jun 18 16:06:56 cloudserver ownCloud[4715]: {hipaa} LOGOUT: [50.232.26.86] (support@mycompany.com)
+Jun 18 16:06:59 cloudserver ownCloud[4816]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 18 16:19:37 cloudserver ownCloud[5082]: {hipaa} LOGIN: Succeeded [66.37.63.194] (jim@anotherlawfirm.com)
+Jun 18 16:20:52 cloudserver ownCloud[5085]: {hipaa} LOGOUT: [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 18 16:20:56 cloudserver ownCloud[5082]: {hipaa} LOGIN: Succeeded [50.232.26.86] (admin)
+Jun 18 16:20:57 cloudserver ownCloud[5086]: {hipaa} LOGOUT: [66.37.63.194] (jim@anotherlawfirm.com)
+Jun 18 16:21:52 cloudserver ownCloud[5086]: {hipaa} LOGOUT: [50.232.26.86] (admin)
+Jun 18 16:21:55 cloudserver ownCloud[32226]: {hipaa} LOGIN: Succeeded [50.232.26.86] (support@mycompany.com)
+Jun 18 16:22:05 cloudserver ownCloud[32226]: {PHP} Undefined index: path at /var/www/apps/files_sharing/lib/share/folder.php#38
+Jun 18 16:23:25  ownCloud[32226]: last message repeated 3 times
+Jun 18 16:30:19 cloudserver ownCloud[5086]: {hipaa} LOGOUT: [50.232.26.86] (support@mycompany.com)
+Jun 18 16:30:22 cloudserver ownCloud[4911]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 18 16:38:19 cloudserver ownCloud[5084]: {hipaa} LOGIN: Succeeded [96.89.51.193] (linux.torvalds@mycompany.com)
+Jun 18 16:38:21 cloudserver ownCloud[5084]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 18 16:38:22 cloudserver ownCloud[5431]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 18 16:38:22 cloudserver ownCloud[5376]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 18 16:38:22 cloudserver ownCloud[5396]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 18 16:38:22 cloudserver ownCloud[5438]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 18 17:44:15 cloudserver ownCloud[5438]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 18 18:01:23 cloudserver ownCloud[6723]: {hipaa} LOGIN: Succeeded [71.60.50.133] (bill.gates@mycompany.com)
+Jun 18 18:01:38 cloudserver ownCloud[5086]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun 18 18:02:13 cloudserver ownCloud[5439]: {hipaa} LOGOUT: [50.232.26.86] (bill.gates@mycompany.com)
+Jun 18 18:19:13 cloudserver ownCloud[5438]: {hipaa} LOGOUT: [71.60.50.133] (bill.gates@mycompany.com)
+Jun 18 18:40:40 cloudserver ownCloud[5438]: {core} Login failed: 'art@googlesmail.com' (Remote IP: '38.121.226.149', X-Forwarded-For: '')
+Jun 18 18:40:40 cloudserver ownCloud[5438]: {hipaa} LOGIN: Failed - Bad password [38.121.226.149] (art@googlesmail.com)
+Jun 18 18:40:47 cloudserver ownCloud[4715]: {core} Login failed: 'art@googlesmail.com' (Remote IP: '38.121.226.149', X-Forwarded-For: '')
+Jun 18 18:40:47 cloudserver ownCloud[4715]: {hipaa} LOGIN: Failed - Bad password [38.121.226.149] (art@googlesmail.com)
+Jun 18 18:45:55 cloudserver ownCloud[4618]: {core} Login failed: 'art@googlesmail.com' (Remote IP: '38.121.226.149', X-Forwarded-For: '')
+Jun 18 18:45:55 cloudserver ownCloud[4618]: {hipaa} LOGIN: Failed - Bad password [38.121.226.149] (art@googlesmail.com)
+Jun 18 18:46:02 cloudserver ownCloud[7077]: {hipaa} LOGIN: Succeeded [38.121.226.149] (art@googlesmail.com)
+Jun 18 22:00:54 cloudserver ownCloud[5439]: {hipaa} LOGIN: Succeeded [173.189.131.37] (moe.stooge@mycompany.com)
+Jun 19 08:36:21 cloudserver ownCloud[5086]: {hipaa} LOGIN: Succeeded [108.48.5.10] (art@googlesmail.com)
+Jun 19 08:37:43 cloudserver ownCloud[6723]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:37:49 cloudserver ownCloud[4715]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:37:57 cloudserver ownCloud[24936]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:38:04 cloudserver ownCloud[4618]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:38:14 cloudserver ownCloud[32226]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:38:21 cloudserver ownCloud[4618]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:39:44 cloudserver ownCloud[25346]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:40:17 cloudserver ownCloud[5439]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:40:23 cloudserver ownCloud[32226]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:40:32 cloudserver ownCloud[25346]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:40:39 cloudserver ownCloud[5086]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:40:40 cloudserver ownCloud[24869]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:40:43 cloudserver ownCloud[5086]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:40:44 cloudserver ownCloud[32226]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:40:50 cloudserver ownCloud[13948]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:40:56 cloudserver ownCloud[25268]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:41:04 cloudserver ownCloud[24849]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:41:16 cloudserver ownCloud[24869]: {PHP} imagecreatefromstring(): Data is not in a recognized format at /var/www/lib/private/image.php#531
+Jun 19 08:43:05 cloudserver ownCloud[25346]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 19 10:05:57 cloudserver ownCloud[25634]: {hipaa} LOGIN: Succeeded [108.48.5.10] (art@googlesmail.com)
+Jun 19 11:22:28 cloudserver ownCloud[25615]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 19 11:23:06 cloudserver ownCloud[29301]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 19 14:12:13 cloudserver ownCloud[31809]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 19 14:12:15 cloudserver ownCloud[25615]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 19 14:12:15 cloudserver ownCloud[29900]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 19 14:12:15 cloudserver ownCloud[29882]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 19 14:12:15 cloudserver ownCloud[29901]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 19 14:12:15 cloudserver ownCloud[26681]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 19 15:05:28 cloudserver ownCloud[29900]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 22 08:17:58 cloudserver ownCloud[21518]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 22 08:18:00 cloudserver ownCloud[8645]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 08:18:00 cloudserver ownCloud[21518]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 08:18:00 cloudserver ownCloud[8378]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 08:18:00 cloudserver ownCloud[12909]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 08:18:01 cloudserver ownCloud[12908]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 08:25:15 cloudserver ownCloud[8667]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 22 09:05:13 cloudserver ownCloud[21518]: {hipaa} LOGIN: Succeeded [173.66.117.2] (larry.stooge@mycompany.com)
+Jun 22 09:22:55 cloudserver ownCloud[21518]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 22 09:22:57 cloudserver ownCloud[21518]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 09:22:57 cloudserver ownCloud[8463]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 09:22:57 cloudserver ownCloud[12909]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 09:22:57 cloudserver ownCloud[8377]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 09:22:57 cloudserver ownCloud[9959]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 09:25:19 cloudserver ownCloud[21518]: {core} Login failed: 'steve.jobs@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 22 09:25:19 cloudserver ownCloud[21518]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 22 09:25:24 cloudserver ownCloud[21518]: {core} Login failed: 'steve.jobs@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 22 09:25:24 cloudserver ownCloud[21518]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 22 09:25:28 cloudserver ownCloud[21518]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 22 09:44:48 cloudserver ownCloud[8801]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun 22 09:45:48 cloudserver ownCloud[8667]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun 22 10:04:33 cloudserver ownCloud[10116]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.ballmer@mycompany.com)
+Jun 22 10:12:31 cloudserver ownCloud[10571]: {hipaa} LOGIN: Succeeded [207.255.7.73] (marissa.mayer@mycompany.com)
+Jun 22 10:44:09 cloudserver ownCloud[10557]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun 22 10:44:28 cloudserver ownCloud[11117]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun 22 10:45:48 cloudserver ownCloud[10571]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun 22 10:57:14 cloudserver ownCloud[10556]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 22 10:57:15 cloudserver ownCloud[11909]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 10:57:15 cloudserver ownCloud[10558]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 10:57:16 cloudserver ownCloud[21518]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 10:57:16 cloudserver ownCloud[10556]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 10:57:16 cloudserver ownCloud[11117]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 11:26:55 cloudserver ownCloud[12645]: {hipaa} LOGIN: Succeeded [75.149.15.153] (bill.gates@mycompany.com)
+Jun 22 11:31:03 cloudserver ownCloud[12647]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 22 11:48:42 cloudserver ownCloud[12764]: {hipaa} LOGOUT: [75.149.15.153] (bill.gates@mycompany.com)
+Jun 22 12:07:02 cloudserver ownCloud[12762]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 22 13:04:51 cloudserver ownCloud[14555]: {hipaa} LOGIN: Succeeded [173.13.35.233] (bill.gates@mycompany.com)
+Jun 22 13:08:03 cloudserver ownCloud[11117]: {hipaa} LOGIN: Succeeded [75.146.70.177] (steve.ballmer@mycompany.com)
+Jun 22 13:11:39 cloudserver ownCloud[12766]: {hipaa} LOGOUT: [173.13.35.233] (bill.gates@mycompany.com)
+Jun 22 13:13:12 cloudserver ownCloud[14435]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 22 13:17:45 cloudserver ownCloud[14929]: {core} Login failed: 'bill.gates@mycompany.com' (Remote IP: '207.255.238.73', X-Forwarded-For: '')
+Jun 22 13:17:45 cloudserver ownCloud[14929]: {hipaa} LOGIN: Failed - Bad password [207.255.238.73] (bill.gates@mycompany.com)
+Jun 22 13:17:53 cloudserver ownCloud[12764]: {hipaa} LOGIN: Succeeded [207.255.238.73] (bill.gates@mycompany.com)
+Jun 22 13:33:40 cloudserver ownCloud[12766]: {hipaa} LOGOUT: [207.255.238.73] (bill.gates@mycompany.com)
+Jun 22 13:34:00 cloudserver ownCloud[14677]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 22 14:37:25 cloudserver ownCloud[14677]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 22 14:42:57 cloudserver ownCloud[16688]: {core} Login failed: 'bill.gates@mycompany.com' (Remote IP: '98.236.221.201', X-Forwarded-For: '')
+Jun 22 14:42:57 cloudserver ownCloud[16688]: {hipaa} LOGIN: Failed - Bad password [98.236.221.201] (bill.gates@mycompany.com)
+Jun 22 14:43:06 cloudserver ownCloud[14677]: {hipaa} LOGIN: Succeeded [98.236.221.201] (bill.gates@mycompany.com)
+Jun 22 14:59:29 cloudserver ownCloud[16843]: {hipaa} LOGOUT: [98.236.221.201] (bill.gates@mycompany.com)
+Jun 22 15:15:58 cloudserver ownCloud[15938]: {core} Login failed: 'steve.jobs@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 22 15:15:58 cloudserver ownCloud[15938]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 22 15:16:02 cloudserver ownCloud[15938]: {core} Login failed: 'steve.jobs@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 22 15:16:02 cloudserver ownCloud[15938]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 22 15:16:08 cloudserver ownCloud[14929]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 22 15:50:01 cloudserver ownCloud[14791]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 22 15:50:03 cloudserver ownCloud[17540]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 15:50:03 cloudserver ownCloud[12764]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 15:50:04 cloudserver ownCloud[14791]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 15:50:04 cloudserver ownCloud[17537]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 15:50:04 cloudserver ownCloud[14929]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 22 18:47:30 cloudserver ownCloud[18303]: {hipaa} LOGIN: Succeeded [139.55.253.187] (moe.stooge@mycompany.com)
+Jun 22 18:48:36 cloudserver ownCloud[16845]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun 23 08:24:10 cloudserver ownCloud[6259]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 23 08:34:27 cloudserver ownCloud[18206]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 23 08:57:41 cloudserver ownCloud[6678]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 08:57:41 cloudserver ownCloud[6259]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 08:57:41 cloudserver ownCloud[6901]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 08:57:41 cloudserver ownCloud[17537]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 08:57:41 cloudserver ownCloud[14929]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 10:35:47 cloudserver ownCloud[6901]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 23 11:01:28 cloudserver ownCloud[10363]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 23 11:01:30 cloudserver ownCloud[10364]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 11:01:30 cloudserver ownCloud[10367]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 11:01:30 cloudserver ownCloud[10366]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 11:01:30 cloudserver ownCloud[10368]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 11:01:30 cloudserver ownCloud[10363]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 11:02:12 cloudserver ownCloud[9221]: {core} Login failed: 'joe.schmoe@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 23 11:02:12 cloudserver ownCloud[9221]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 23 11:02:14 cloudserver ownCloud[9221]: {core} Login failed: 'joe.schmoe@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 23 11:02:14 cloudserver ownCloud[9221]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 23 11:02:20 cloudserver ownCloud[10366]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 23 11:26:26 cloudserver ownCloud[10368]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 23 13:29:24 cloudserver ownCloud[13590]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 23 14:17:49 cloudserver ownCloud[9221]: {hipaa} LOGIN: Succeeded [96.89.39.65] (linux.torvalds@mycompany.com)
+Jun 23 14:18:01 cloudserver ownCloud[10367]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 14:18:01 cloudserver ownCloud[11010]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 14:18:01 cloudserver ownCloud[9221]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 14:18:01 cloudserver ownCloud[13724]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 14:18:01 cloudserver ownCloud[13591]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 14:53:35 cloudserver ownCloud[15100]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 23 14:53:37 cloudserver ownCloud[13591]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 14:53:37 cloudserver ownCloud[15100]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 14:53:37 cloudserver ownCloud[13724]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 14:53:37 cloudserver ownCloud[15959]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 14:53:37 cloudserver ownCloud[13592]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 18:26:40 cloudserver ownCloud[15959]: {core} Login failed: 'larry.stooge@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 23 18:26:40 cloudserver ownCloud[15959]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 23 18:26:47 cloudserver ownCloud[15960]: {core} Login failed: 'larry.stooge@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 23 18:26:47 cloudserver ownCloud[15960]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 23 18:26:51 cloudserver ownCloud[15960]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 23 19:17:05 cloudserver ownCloud[17126]: {hipaa} LOGIN: Succeeded [98.236.220.232] (linux.torvalds@mycompany.com)
+Jun 23 19:17:07 cloudserver ownCloud[20793]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 19:17:07 cloudserver ownCloud[21933]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 19:17:08 cloudserver ownCloud[15960]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 19:17:08 cloudserver ownCloud[15099]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 19:17:08 cloudserver ownCloud[20792]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 23 21:04:05 cloudserver ownCloud[17137]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 24 08:10:38 cloudserver ownCloud[6920]: {core} Login failed: 'joe.schmoe@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 24 08:10:38 cloudserver ownCloud[6920]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 24 08:10:44 cloudserver ownCloud[6920]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 24 08:11:51 cloudserver ownCloud[24891]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 24 10:15:17 cloudserver ownCloud[6674]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun 24 10:18:34 cloudserver ownCloud[9656]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 24 10:57:24 cloudserver ownCloud[7034]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 24 11:02:00 cloudserver ownCloud[7033]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.ballmer@mycompany.com)
+Jun 24 11:32:26 cloudserver ownCloud[10962]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 24 11:32:28 cloudserver ownCloud[11125]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 11:32:28 cloudserver ownCloud[10962]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 11:32:28 cloudserver ownCloud[10961]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 11:32:29 cloudserver ownCloud[9656]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 11:32:29 cloudserver ownCloud[7033]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 11:39:59 cloudserver ownCloud[9657]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun 24 13:31:48 cloudserver ownCloud[11718]: {core} Login failed: 'dumb@ss.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 24 13:31:48 cloudserver ownCloud[11718]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (dumb@ss.com)
+Jun 24 13:31:58 cloudserver ownCloud[9656]: {core} Login failed: 'dumb@ss.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 24 13:31:58 cloudserver ownCloud[9656]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (dumb@ss.com)
+Jun 24 13:32:57 cloudserver ownCloud[9657]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 24 13:54:55 cloudserver ownCloud[14672]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 24 14:49:30 cloudserver ownCloud[16441]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 24 15:37:11 cloudserver ownCloud[16441]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 24 15:37:13 cloudserver ownCloud[15058]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:37:13 cloudserver ownCloud[17919]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:37:13 cloudserver ownCloud[12457]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:37:13 cloudserver ownCloud[16603]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:37:13 cloudserver ownCloud[16441]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:42:13 cloudserver ownCloud[18088]: {hipaa} LOGIN: Succeeded [75.149.15.153] (linux.torvalds@mycompany.com)
+Jun 24 15:42:17 cloudserver ownCloud[16603]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:42:17 cloudserver ownCloud[15058]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:42:18 cloudserver ownCloud[18088]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:42:18 cloudserver ownCloud[17919]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:42:18 cloudserver ownCloud[18089]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:45:04 cloudserver ownCloud[18089]: {core} Login failed: 'linux.torvalds@mycompany.com' (Remote IP: '75.149.15.153', X-Forwarded-For: '')
+Jun 24 15:45:04 cloudserver ownCloud[18089]: {hipaa} LOGIN: Failed - Bad password [75.149.15.153] (linux.torvalds@mycompany.com)
+Jun 24 15:45:05 cloudserver ownCloud[18089]: {hipaa} LOGIN: Failed - Bad password [75.149.15.153] (linux.torvalds@mycompany.com)
+Jun 24 15:45:06 cloudserver ownCloud[18089]: {hipaa} LOGIN: Failed - Bad password [75.149.15.153] (linux.torvalds@mycompany.com)
+Jun 24 15:45:07 cloudserver ownCloud[18089]: {hipaa} LOGIN: Failed - Bad password [75.149.15.153] (linux.torvalds@mycompany.com)
+Jun 24 15:45:08 cloudserver ownCloud[18089]: {hipaa} LOGIN: Failed - Bad password [75.149.15.153] (linux.torvalds@mycompany.com)
+Jun 24 15:45:09 cloudserver ownCloud[18089]: {hipaa} LOGIN: Failed - Bad password [75.149.15.153] (linux.torvalds@mycompany.com)
+Jun 24 15:45:10 cloudserver ownCloud[18089]: {hipaa} LOGIN: Failed - Bad password [75.149.15.153] (linux.torvalds@mycompany.com)
+Jun 24 15:45:11 cloudserver ownCloud[18089]: {hipaa} LOGIN: Failed - Bad password [75.149.15.153] (linux.torvalds@mycompany.com)
+Jun 24 15:45:13 cloudserver ownCloud[18120]: {hipaa} LOGIN: Succeeded [75.149.15.153] (linux.torvalds@mycompany.com)
+Jun 24 15:45:16 cloudserver ownCloud[18120]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:45:16 cloudserver ownCloud[18090]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:45:16 cloudserver ownCloud[16441]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:45:16 cloudserver ownCloud[12457]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 15:45:16 cloudserver ownCloud[17919]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 24 16:33:08 cloudserver ownCloud[18088]: {hipaa} LOGIN: Succeeded [66.37.63.194] (jim@anotherlawfirm.com)
+Jun 24 16:34:16 cloudserver ownCloud[18090]: {hipaa} LOGOUT: [66.37.63.194] (jim@anotherlawfirm.com)
+Jun 24 16:34:46 cloudserver ownCloud[19391]: {hipaa} LOGIN: Succeeded [75.145.46.109] (bill.gates@mycompany.com)
+Jun 24 16:52:31 cloudserver ownCloud[18088]: {hipaa} LOGOUT: [75.145.46.109] (bill.gates@mycompany.com)
+Jun 24 17:25:33 cloudserver ownCloud[19391]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 24 20:25:33 cloudserver ownCloud[24494]: {hipaa} LOGIN: Succeeded [50.232.26.86] (jessica.rabbit@mycompany.com)
+Jun 24 21:25:08 cloudserver ownCloud[24494]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 24 21:54:08 cloudserver ownCloud[18122]: {hipaa} LOGIN: Succeeded [98.21.104.183] (moe.stooge@mycompany.com)
+Jun 25 08:24:16 cloudserver ownCloud[26938]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 25 08:26:36 cloudserver ownCloud[24494]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 25 08:36:58 cloudserver ownCloud[24494]: {core} Login failed: 'tech@fatty.com' (Remote IP: '74.214.53.26', X-Forwarded-For: '')
+Jun 25 08:36:58 cloudserver ownCloud[24494]: {hipaa} LOGIN: Failed - Bad password [74.214.53.26] (tech@fatty.com)
+Jun 25 08:37:10 cloudserver ownCloud[10410]: {core} Login failed: 'tech@fatty.com' (Remote IP: '74.214.53.26', X-Forwarded-For: '')
+Jun 25 08:37:10 cloudserver ownCloud[10410]: {hipaa} LOGIN: Failed - Bad password [74.214.53.26] (tech@fatty.com)
+Jun 25 09:02:33 cloudserver ownCloud[24614]: {core} Login failed: 'tech@fatty.com' (Remote IP: '24.229.25.85', X-Forwarded-For: '')
+Jun 25 09:02:33 cloudserver ownCloud[24614]: {hipaa} LOGIN: Failed - Bad password [24.229.25.85] (tech@fatty.com)
+Jun 25 09:03:24 cloudserver ownCloud[11063]: {core} Login failed: 'tech@fatty.com' (Remote IP: '24.229.25.85', X-Forwarded-For: '')
+Jun 25 09:03:24 cloudserver ownCloud[11063]: {hipaa} LOGIN: Failed - Bad password [24.229.25.85] (tech@fatty.com)
+Jun 25 09:03:59 cloudserver ownCloud[10411]: {core} Login failed: 'tech@fatty.com' (Remote IP: '24.229.25.85', X-Forwarded-For: '')
+Jun 25 09:03:59 cloudserver ownCloud[10411]: {hipaa} LOGIN: Failed - Bad password [24.229.25.85] (tech@fatty.com)
+Jun 25 09:04:06 cloudserver ownCloud[10410]: {hipaa} LOGIN: Succeeded [24.229.25.85] (tech@fatty.com)
+Jun 25 09:10:21 cloudserver ownCloud[10411]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 25 10:12:44 cloudserver ownCloud[11334]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun 25 10:33:58 cloudserver ownCloud[27169]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun 25 10:40:58 cloudserver ownCloud[11334]: {core} Login failed: 'linux.torvalds@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 25 10:40:58 cloudserver ownCloud[11334]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 25 10:41:20 cloudserver ownCloud[10411]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 25 11:25:18 cloudserver ownCloud[10410]: {hipaa} LOGIN: Succeeded [216.220.86.66] (stuxnet@natanz.org)
+Jun 25 11:25:42 cloudserver ownCloud[27169]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun 25 11:28:25 cloudserver ownCloud[25098]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun 25 11:50:00 cloudserver ownCloud[15423]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 25 11:53:00 cloudserver ownCloud[15703]: {hipaa} LOGIN: Succeeded [50.199.184.93] (some.indian.guy@mycompany.com)
+Jun 25 11:56:01 cloudserver ownCloud[15856]: {hipaa} LOGIN: Succeeded [23.25.81.209] (some.indian.guy@mycompany.com)
+Jun 25 11:58:54 cloudserver ownCloud[15881]: {hipaa} LOGIN: Succeeded [24.229.25.85] (some.indian.guy@mycompany.com)
+Jun 25 12:11:47 cloudserver ownCloud[16195]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 25 12:57:19 cloudserver ownCloud[15551]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 25 13:06:58 cloudserver ownCloud[18029]: {hipaa} LOGIN: Succeeded [204.195.169.210] (some.indian.guy@mycompany.com)
+Jun 25 13:09:19 cloudserver ownCloud[18076]: {core} Login failed: 'some.indian.guy@mycompany.com' (Remote IP: '207.255.7.73', X-Forwarded-For: '')
+Jun 25 13:09:19 cloudserver ownCloud[18076]: {hipaa} LOGIN: Failed - Bad password [207.255.7.73] (some.indian.guy@mycompany.com)
+Jun 25 13:09:24 cloudserver ownCloud[18076]: {hipaa} LOGIN: Succeeded [207.255.7.73] (some.indian.guy@mycompany.com)
+Jun 25 13:11:40 cloudserver ownCloud[18032]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 25 13:25:38 cloudserver ownCloud[18458]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 25 13:25:40 cloudserver ownCloud[18254]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 25 13:25:40 cloudserver ownCloud[18078]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 25 13:25:40 cloudserver ownCloud[18454]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 25 13:25:40 cloudserver ownCloud[18077]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 25 13:25:40 cloudserver ownCloud[18458]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 25 13:36:44 cloudserver ownCloud[19141]: {hipaa} LOGIN: Succeeded [75.146.70.173] (some.indian.guy@mycompany.com)
+Jun 25 13:47:07 cloudserver ownCloud[19143]: {hipaa} LOGIN: Succeeded [50.243.169.113] (some.indian.guy@mycompany.com)
+Jun 25 13:48:58 cloudserver ownCloud[18275]: {core} Login failed: 'some.indian.guy@mycompany.com' (Remote IP: '75.146.70.177', X-Forwarded-For: '')
+Jun 25 13:48:58 cloudserver ownCloud[18275]: {hipaa} LOGIN: Failed - Bad password [75.146.70.177] (some.indian.guy@mycompany.com)
+Jun 25 13:49:03 cloudserver ownCloud[18275]: {hipaa} LOGIN: Succeeded [75.146.70.177] (some.indian.guy@mycompany.com)
+Jun 25 14:01:08 cloudserver ownCloud[19914]: {hipaa} LOGIN: Succeeded [207.255.12.131] (some.indian.guy@mycompany.com)
+Jun 25 14:16:34 cloudserver ownCloud[19456]: {hipaa} LOGIN: Succeeded [71.240.223.130] (some.indian.guy@mycompany.com)
+Jun 25 14:18:22 cloudserver ownCloud[20364]: {hipaa} LOGIN: Succeeded [75.145.46.109] (some.indian.guy@mycompany.com)
+Jun 25 14:20:00 cloudserver ownCloud[20338]: {hipaa} LOGIN: Succeeded [50.197.60.9] (some.indian.guy@mycompany.com)
+Jun 25 14:20:42 cloudserver ownCloud[20364]: {hipaa} LOGIN: Succeeded [50.248.86.85] (some.indian.guy@mycompany.com)
+Jun 25 14:21:12 cloudserver ownCloud[20334]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 25 14:21:12 cloudserver ownCloud[20563]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 25 14:21:12 cloudserver ownCloud[20364]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 25 14:42:31 cloudserver ownCloud[21197]: {core} Login failed: 'some.indian.guy@mycompany.com' (Remote IP: '173.13.35.233', X-Forwarded-For: '')
+Jun 25 14:42:31 cloudserver ownCloud[21197]: {hipaa} LOGIN: Failed - Bad password [173.13.35.233] (some.indian.guy@mycompany.com)
+Jun 25 14:42:36 cloudserver ownCloud[21197]: {hipaa} LOGIN: Succeeded [173.13.35.233] (some.indian.guy@mycompany.com)
+Jun 25 14:44:49 cloudserver ownCloud[21226]: {core} Login failed: 'some.indian.guy@mycompany.com' (Remote IP: '96.89.51.193', X-Forwarded-For: '')
+Jun 25 14:44:49 cloudserver ownCloud[21226]: {hipaa} LOGIN: Failed - Bad password [96.89.51.193] (some.indian.guy@mycompany.com)
+Jun 25 14:44:56 cloudserver ownCloud[21197]: {core} Login failed: 'some.indian.guy@mycompany.com' (Remote IP: '96.89.51.193', X-Forwarded-For: '')
+Jun 25 14:44:56 cloudserver ownCloud[21197]: {hipaa} LOGIN: Failed - Bad password [96.89.51.193] (some.indian.guy@mycompany.com)
+Jun 25 14:45:03 cloudserver ownCloud[21199]: {hipaa} LOGIN: Succeeded [96.89.51.193] (some.indian.guy@mycompany.com)
+Jun 25 14:49:56 cloudserver ownCloud[20772]: {hipaa} LOGIN: Succeeded [73.174.14.234] (some.indian.guy@mycompany.com)
+Jun 25 14:51:37 cloudserver ownCloud[21554]: {core} Login failed: 'some.indian.guy@mycompany.com' (Remote IP: '50.243.179.233', X-Forwarded-For: '')
+Jun 25 14:51:37 cloudserver ownCloud[21554]: {hipaa} LOGIN: Failed - Bad password [50.243.179.233] (some.indian.guy@mycompany.com)
+Jun 25 14:51:44 cloudserver ownCloud[20772]: {hipaa} LOGIN: Succeeded [50.243.179.233] (some.indian.guy@mycompany.com)
+Jun 25 14:52:30 cloudserver ownCloud[20754]: {hipaa} LOGIN: Succeeded [151.201.137.101] (some.indian.guy@mycompany.com)
+Jun 25 14:56:08 cloudserver ownCloud[21226]: {hipaa} LOGIN: Succeeded [207.255.8.86] (some.indian.guy@mycompany.com)
+Jun 25 15:06:31 cloudserver ownCloud[21746]: {core} Login failed: 'bill.gates@mycompany.com' (Remote IP: '98.236.222.185', X-Forwarded-For: '')
+Jun 25 15:06:31 cloudserver ownCloud[21746]: {hipaa} LOGIN: Failed - Bad password [98.236.222.185] (bill.gates@mycompany.com)
+Jun 25 15:06:38 cloudserver ownCloud[22062]: {hipaa} LOGIN: Succeeded [98.236.222.185] (bill.gates@mycompany.com)
+Jun 25 15:10:22 cloudserver ownCloud[21578]: {hipaa} LOGIN: Succeeded [71.60.50.133] (some.indian.guy@mycompany.com)
+Jun 25 15:11:01 cloudserver ownCloud[21751]: {hipaa} LOGIN: Succeeded [72.28.192.18] (some.indian.guy@mycompany.com)
+Jun 25 15:14:45 cloudserver ownCloud[21578]: {hipaa} LOGOUT: [98.236.222.185] (bill.gates@mycompany.com)
+Jun 25 15:14:46 cloudserver ownCloud[22062]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 25 16:55:46 cloudserver ownCloud[22647]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 26 08:38:04 cloudserver ownCloud[31194]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 26 08:41:31 cloudserver ownCloud[22646]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 26 08:42:10 cloudserver ownCloud[25568]: {core} Login failed: 'steve.jobs@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 26 08:42:10 cloudserver ownCloud[25568]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 26 08:42:19 cloudserver ownCloud[19787]: {core} Login failed: 'steve.jobs@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 26 08:42:19 cloudserver ownCloud[19787]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 26 08:42:25 cloudserver ownCloud[19787]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 26 09:21:04 cloudserver ownCloud[19787]: {hipaa} LOGIN: Succeeded [207.255.75.197] (moe.stooge@mycompany.com)
+Jun 26 09:28:34 cloudserver ownCloud[31194]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 26 09:34:34 cloudserver ownCloud[31194]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 26 09:46:40 cloudserver ownCloud[22278]: {hipaa} LOGIN: Succeeded [207.255.75.197] (moe.stooge@mycompany.com)
+Jun 26 09:50:52 cloudserver ownCloud[22278]: {core} Login failed: 'dumb@ss.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 26 09:50:52 cloudserver ownCloud[22278]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (dumb@ss.com)
+Jun 26 09:51:03 cloudserver ownCloud[23146]: {core} Login failed: 'dumb@ss.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 26 09:51:03 cloudserver ownCloud[23146]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (dumb@ss.com)
+Jun 26 09:51:10 cloudserver ownCloud[23146]: {core} Login failed: 'dumb@ss.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 26 09:51:10 cloudserver ownCloud[23146]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (dumb@ss.com)
+Jun 26 09:51:18 cloudserver ownCloud[21349]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 26 09:53:28 cloudserver ownCloud[23420]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 26 09:55:00 cloudserver ownCloud[22648]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 26 10:24:54 cloudserver ownCloud[23673]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun 26 10:29:06 cloudserver ownCloud[23420]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 26 10:30:17 cloudserver ownCloud[24791]: {OCP\Share} Sharing IT Management Report failed, because this item is already shared with joe.schmoe@mycompany.com
+Jun 26 10:30:23 cloudserver ownCloud[24786]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 26 10:32:58 cloudserver ownCloud[23675]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 26 11:59:09 cloudserver ownCloud[24791]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 26 12:00:06 cloudserver ownCloud[24791]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 26 12:45:12 cloudserver ownCloud[28973]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 26 13:01:09 cloudserver ownCloud[27479]: {hipaa} LOGIN: Succeeded [98.236.221.201] (andy@microsoft.com)
+Jun 26 13:49:22 cloudserver ownCloud[29475]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 26 13:54:55 cloudserver ownCloud[24472]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 26 14:20:19 cloudserver ownCloud[29475]: {hipaa} LOGIN: Succeeded [71.240.223.130] (user@medtech.com)
+Jun 26 15:26:13 cloudserver ownCloud[27479]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 26 21:46:48 cloudserver ownCloud[29475]: {hipaa} LOGIN: Succeeded [108.48.5.10] (larry.stooge@mycompany.com)
+Jun 26 22:12:17 cloudserver ownCloud[29475]: {hipaa} LOGIN: Succeeded [50.232.26.86] (jessica.rabbit@mycompany.com)
+Jun 27 14:22:25 cloudserver ownCloud[4667]: {hipaa} LOGIN: Succeeded [108.48.5.10] (larry.stooge@mycompany.com)
+Jun 28 10:42:43 cloudserver ownCloud[10796]: {hipaa} LOGIN: Succeeded [108.48.5.10] (larry.stooge@mycompany.com)
+Jun 29 07:24:28 cloudserver ownCloud[10793]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 29 08:32:46 cloudserver ownCloud[22896]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 29 09:03:11 cloudserver ownCloud[10796]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 29 09:47:31 cloudserver ownCloud[18200]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 29 11:17:50 cloudserver ownCloud[31533]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun 29 11:35:44 cloudserver ownCloud[32222]: {hipaa} LOGIN: Succeeded [98.239.230.60] (larry.stooge@mycompany.com)
+Jun 29 11:48:45 cloudserver ownCloud[29031]: {hipaa} LOGIN: Succeeded [66.37.63.194] (linux.torvalds@mycompany.com)
+Jun 29 11:48:47 cloudserver ownCloud[845]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 29 11:48:47 cloudserver ownCloud[32222]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 29 11:48:47 cloudserver ownCloud[29031]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 29 11:48:47 cloudserver ownCloud[31537]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 29 11:48:47 cloudserver ownCloud[847]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 29 14:42:25 cloudserver ownCloud[450]: {hipaa} LOGIN: Succeeded [207.255.7.73] (marissa.mayer@mycompany.com)
+Jun 29 15:13:02 cloudserver ownCloud[845]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 29 15:41:06 cloudserver ownCloud[1396]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.ballmer@mycompany.com)
+Jun 29 15:50:16 cloudserver ownCloud[32222]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 29 16:37:02 cloudserver ownCloud[7360]: {hipaa} LOGIN: Succeeded [207.255.7.73] (some.indian.guy@mycompany.com)
+Jun 29 21:03:14 cloudserver ownCloud[9470]: {hipaa} LOGIN: Succeeded [98.236.220.232] (linux.torvalds@mycompany.com)
+Jun 29 21:03:16 cloudserver ownCloud[8670]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 29 21:03:16 cloudserver ownCloud[9470]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 29 21:03:16 cloudserver ownCloud[6441]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 29 21:03:16 cloudserver ownCloud[10148]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 29 21:03:16 cloudserver ownCloud[846]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 29 21:40:16 cloudserver ownCloud[845]: {PHP} Undefined index: mime at /var/www/apps/files/ajax/mimeicon.php#4
+Jun 30 07:14:32 cloudserver ownCloud[7360]: {hipaa} LOGIN: Succeeded [67.234.27.180] (lisa@thedevilito.com)
+Jun 30 08:35:22 cloudserver ownCloud[7686]: {hipaa} LOGIN: Succeeded [50.232.26.86] (linux.torvalds@mycompany.com)
+Jun 30 08:35:25 cloudserver ownCloud[7687]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 08:35:25 cloudserver ownCloud[10782]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 08:35:25 cloudserver ownCloud[6581]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 08:35:25 cloudserver ownCloud[7686]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 08:35:25 cloudserver ownCloud[18386]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 08:51:42 cloudserver ownCloud[7688]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 30 08:54:37 cloudserver ownCloud[845]: {hipaa} LOGIN: Succeeded [50.232.26.86] (bill.gates@mycompany.com)
+Jun 30 09:25:48 cloudserver ownCloud[8450]: {hipaa} LOGIN: Succeeded [50.232.26.86] (joe.schmoe@mycompany.com)
+Jun 30 09:29:45 cloudserver ownCloud[8443]: {hipaa} LOGIN: Succeeded [24.145.24.22] (steven.hawking@mycompany.com)
+Jun 30 09:48:35 cloudserver ownCloud[18386]: {hipaa} LOGIN: Succeeded [50.232.26.86] (moe.stooge@mycompany.com)
+Jun 30 09:57:22 cloudserver ownCloud[18386]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 30 10:22:59 cloudserver ownCloud[9649]: {hipaa} LOGIN: Succeeded [50.232.26.86] (ada.byron@mycompany.com)
+Jun 30 11:50:53 cloudserver ownCloud[845]: {hipaa} LOGIN: Succeeded [50.232.26.86] (larry.stooge@mycompany.com)
+Jun 30 13:19:57 cloudserver ownCloud[9649]: {hipaa} LOGIN: Succeeded [71.240.223.130] (steve.ballmer@mycompany.com)
+Jun 30 13:32:24 cloudserver ownCloud[16904]: {hipaa} LOGIN: Succeeded [4.35.232.147] (admin)
+Jun 30 13:36:38 cloudserver ownCloud[17421]: {hipaa} LOGIN: Succeeded [192.168.5.36] (admin)
+Jun 30 13:36:52  ownCloud[17421]: last message repeated 2 times
+Jun 30 13:36:52 cloudserver ownCloud[17411]: {hipaa} LOGIN: Succeeded [192.168.5.36] (admin)
+Jun 30 13:38:16  ownCloud[17411]: last message repeated 2 times
+Jun 30 13:52:54 cloudserver ownCloud[17422]: {hipaa} LOGIN: Succeeded [4.35.232.147] (admin)
+Jun 30 14:02:35 cloudserver ownCloud[17422]: {hipaa} LOGOUT: [4.35.232.147] (admin)
+Jun 30 14:02:50 cloudserver ownCloud[19467]: {hipaa} LOGIN: Succeeded [4.35.232.147] (steven.hawking@mycompany.com)
+Jun 30 14:42:16 cloudserver ownCloud[17422]: {hipaa} LOGOUT: [4.35.232.147] (steven.hawking@mycompany.com)
+Jun 30 14:42:21 cloudserver ownCloud[17422]: {hipaa} LOGIN: Succeeded [4.35.232.147] (admin)
+Jun 30 14:42:54 cloudserver ownCloud[17422]: {hipaa} LOGOUT: [4.35.232.147] (admin)
+Jun 30 15:26:44 cloudserver ownCloud[20489]: {core} Login failed: 'some.indian.guy@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 30 15:26:44 cloudserver ownCloud[20489]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 30 15:26:49 cloudserver ownCloud[19468]: {hipaa} LOGIN: Succeeded [50.232.26.86] (some.indian.guy@mycompany.com)
+Jun 30 16:23:26 cloudserver ownCloud[18288]: {core} Login failed: 'steve.jobs@mycompany.com' (Remote IP: '50.232.26.86', X-Forwarded-For: '')
+Jun 30 16:23:26 cloudserver ownCloud[18288]: {hipaa} LOGIN: Failed - Bad password [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 30 16:23:30 cloudserver ownCloud[18288]: {hipaa} LOGIN: Succeeded [50.232.26.86] (steve.jobs@mycompany.com)
+Jun 30 16:46:51 cloudserver ownCloud[27439]: {hipaa} LOGIN: Succeeded [50.232.26.86] (jessica.rabbit@mycompany.com)
+Jun 30 17:07:21 cloudserver ownCloud[27438]: {hipaa} LOGIN: Succeeded [207.255.7.73] (some.indian.guy@mycompany.com)
+Jun 30 21:19:11 cloudserver ownCloud[24317]: {hipaa} LOGIN: Succeeded [50.232.26.86] (jessica.rabbit@mycompany.com)
+Jun 30 22:17:41 cloudserver ownCloud[28101]: {hipaa} LOGIN: Succeeded [71.240.223.130] (linux.torvalds@mycompany.com)
+Jun 30 22:17:43 cloudserver ownCloud[28101]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 22:17:43 cloudserver ownCloud[27438]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 22:17:43 cloudserver ownCloud[5554]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 22:17:43 cloudserver ownCloud[5556]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 22:17:43 cloudserver ownCloud[27462]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 22:19:17 cloudserver ownCloud[5555]: {hipaa} LOGIN: Succeeded [98.236.220.232] (linux.torvalds@mycompany.com)
+Jun 30 22:19:19 cloudserver ownCloud[5554]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 22:19:19 cloudserver ownCloud[5555]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 22:19:19 cloudserver ownCloud[5613]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 22:19:19 cloudserver ownCloud[5614]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 22:19:19 cloudserver ownCloud[28101]: {PHP} imagecreatefromstring(): Empty string or invalid image at /var/www/lib/private/image.php#531
+Jun 30 22:42:46 cloudserver ownCloud[27438]: {hipaa} LOGIN: Succeeded [139.55.249.153] (moe.stooge@mycompany.com)
