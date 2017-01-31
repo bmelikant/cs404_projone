@@ -36,16 +36,22 @@ import java.nio.file.attribute.BasicFileAttributes;
 // container for each failed login attempt
 class LoginAttempt 
 {
-	public GregorianCalendar datetime;
-	public String loginid;
-	public String ipaddr;
+	public GregorianCalendar datetime = new GregorianCalendar();
+	public String loginid = "";
+	public String ipaddr = "";
+        
+        public LoginAttempt(){
+            
+        }
+        
+        
 }
 
 // list of failed logins. Contains logic for processing the list of data
-class FailedLoginList 
+public class FailedLoginList 
 {
 
-	private ArrayList<LoginAttempt> failedLogins;
+	public ArrayList<LoginAttempt> failedLogins;
 	private ArrayList<String> blacklisted;
 	private String logFileName;
         // private int calendarYear;
@@ -99,7 +105,8 @@ class FailedLoginList
                         
                         // next we want to grab the username associated with the error
                         la.loginid = nextLine.substring(nextLine.indexOf ('(')+1, nextLine.indexOf(')'));
-                        
+                                                
+
                         // and last, the attemped login IP address
                         la.ipaddr = nextLine.substring (nextLine.indexOf('[', nextLine.indexOf("LOGIN:"))+1, nextLine.indexOf(']', nextLine.indexOf("LOGIN:")));
                         
@@ -129,6 +136,9 @@ class FailedLoginList
                 System.err.println ("Exception details: " + e.toString ());
             }
         }
+        public ArrayList copyFailed(){
+            return failedLogins;
+        }
         
-	public void processLogs () { }
+	public void processLogs() { }
 }
