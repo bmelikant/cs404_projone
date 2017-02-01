@@ -10,30 +10,80 @@
  */
 package cs404_one;          // set the package for this file
 
-import java.util.ArrayList;
+import java.awt.Dimension;
+import java.awt.GridBagLayout;
+
+import java.awt.*;
 import javax.swing.*;       // just import everything for swing - never know what we need!!
 
 // GUI component
-public class StansGUI extends JFrame {
+public class StansGUI
+{
+    
+    // member variables (GUI objects)
+    private JFrame      jf_mainWindow;
+    private JMenuBar    jmb_mainMenu;
+    private JMenuItem   jmi_goMenuItem;
+    
+    // initGUI (): Create the GUI
+    private void initGUI () {
+        
+        jf_mainWindow = new JFrame ();
+        jf_mainWindow.setLayout(new BorderLayout ());
+        
+        jf_mainWindow.setTitle ("Log Parser");
+        jf_mainWindow.setPreferredSize(new Dimension (400, 300));
+        jf_mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // initialize all the window controls
+        initMainMenu ();
+        initComponents ();
+        
+        // display the GUI!
+        jf_mainWindow.pack();
+        jf_mainWindow.setVisible(true);
+    }
+    
+    // initMainMenu (): Initialize the main program menu (top menu)
+    // inputs: none, returns: none
+    private void initMainMenu () {
+        
+        // create the menu controls
+        jmb_mainMenu = new JMenuBar ();
+        
+        // create the GO! button
+        jmi_goMenuItem = new JMenuItem ("GO!");
+        
+        // add all the menu items to the main menu
+        jmb_mainMenu.add (jmi_goMenuItem);
+        
+        // add the menu controls to the main window if it exists
+        if (jf_mainWindow != null) 
+        {            
+            jf_mainWindow.setJMenuBar(jmb_mainMenu);
+        }
+    }
+    
+    // initComponents (): Set up all the components of the GUI
+    // inputs: none, returns: none
+    private void initComponents () {
+        
+        // create a test text area
+        JTextArea testArea = new JTextArea (80, 25);
+        
+        jf_mainWindow.getContentPane().add (testArea, BorderLayout.CENTER);
+    }
 
     // Stub main method (testing)
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
 
-        // Stan: This is the way that failed login list should be used from the GUI.
-        // create a new isntance of the login list with the logfile name (fetched thru
-        // the browse dialog), then call the two methods readLogFile() and processLogs()
-        FailedLoginList fll = new FailedLoginList("owncloud.log");
-        fll.readLogFile();
-
- 
-      //  System.out.println("User # 23 (" + users.get(12).name + ") has " + users.get(12).returnArraySize() + " logins");
-        FailFinder test = new FailFinder(fll);
+        // create a new StansGUI
+        StansGUI myGui = new StansGUI ();
         
-        test.showAllNames();
-        test.showRecord(test.showName(2));
-        test.showTimes(test.showName(2));
-          
-        
-
+        // create the GUI
+        javax.swing.SwingUtilities.invokeLater (new Runnable () {
+            public void run () { myGui.initGUI (); }});
+            
     }  // end main
 }
