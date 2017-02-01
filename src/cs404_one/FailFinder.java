@@ -21,12 +21,16 @@ public class FailFinder
     public ArrayList<String> uniqueNames;
     public FailFinder(FailedLoginList f) 
     {
-        myFailedLogins = f.failedLogins;
-        uniqueNames = new ArrayList();
+        // your logins will be a copy of my original object
+        myFailedLogins = f.getFailedLogins();
+        uniqueNames = new ArrayList<>();
+        
+        // this is public. consider calling it from main() instead,
+        // or making it private to the class since it's only meant to be used here
         loadUniqueNames();
     }
-//Finds all of the unique names in the log.
-
+    
+    //Finds all of the unique names in the log.
     public void loadUniqueNames() 
     {
         uniqueNames.add(myFailedLogins.get(0).loginid);

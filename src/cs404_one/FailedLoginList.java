@@ -142,6 +142,7 @@ public class FailedLoginList
         // inputs: none, returns: the list of failed logins and their associated data
         public ArrayList<LoginAttempt> getFailedLogins () 
         {    
-            return this.failedLogins;
+            // hand out a copy of the list rather than a reference to the original
+            return new ArrayList<>(this.failedLogins);
         }
 }
