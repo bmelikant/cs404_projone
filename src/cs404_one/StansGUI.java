@@ -27,15 +27,11 @@ public class StansGUI extends JFrame {
 
  
       //  System.out.println("User # 23 (" + users.get(12).name + ") has " + users.get(12).returnArraySize() + " logins");
-        // what do we want to do with the results here?
-        // should this function return a list of Strings maybe?
-        fll.processLogs ();
-        
         FailFinder test = new FailFinder(fll);
         
-        //test.showAllNames();
-        //test.showRecord(test.showName(2));
-        //test.showTimes(test.showName(2));
+        test.showAllNames();
+        test.showRecord(test.showName(2));
+        test.showTimes(test.showName(2));
           
         
 
