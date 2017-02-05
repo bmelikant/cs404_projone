@@ -18,6 +18,19 @@ public class FailedLoginGUI extends javax.swing.JFrame
     //This is the FailedLoginListObject referenced in the rest of the program
     //FailedLoginList logFile = new FailedLoginList();
     
+    // Don't forget, you will also need to couple my processed FailedLoginList to a FailFinder
+    // to actually parse out the names. You will have to do something like:
+    
+    // FailedLoginList loginList = new FailedLoginList (filename);
+    // loginList.processLogs ();
+    
+    // FailFinder processedNames = new FailFinder (loginList);
+    // processedNames.processTimes ();      // or whatever Dolan decides for this method name
+    // int listSize = processedNames.getSize () // or however Dolan decides to present this data
+    // for (int i = 0; i < listSize; i++) {
+    //      // set list model here
+    // }
+    
     /**
      * Creates new form FailedLoginGUI
      */
@@ -177,6 +190,15 @@ public class FailedLoginGUI extends javax.swing.JFrame
                     I noticed in FailedLoginList you want a string with the filename.  IF you want to use that
                 method, I'll need setName instead of setFile since the FailedLoginListObject needs to be made
                 outside of this method for it to work.
+        */
+        
+        /* Instead of making one primary FailedLoginList object as a member of your class,
+           consider this design instead, similar to using the JFileChooser:
+        
+            FailedLoginListObject = new FailedLoginList (file);
+        
+            That actually eliminates the need for a reset button as the object gets
+            recreated on every log file change. 
         */
         
         //This is for testing purposes
