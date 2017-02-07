@@ -24,15 +24,15 @@ public class FailFinder
     public ArrayList<String> uniqueNames;
     public FailFinder(FailedLoginList f) 
     {
-        myFailedLogins = f.failedLogins;
+        myFailedLogins = f.getFailedLogins();
         uniqueNames = new ArrayList();
         //////////////////NEW////////////////////////
         myBlackList = new ArrayList();
         /////////////////NEW////////////////////////
         loadUniqueNames();
     }
-//Finds all of the unique names in the log.
-
+    
+    //Finds all of the unique names in the log.
     public void loadUniqueNames() 
     {
         uniqueNames.add(myFailedLogins.get(0).loginid);
