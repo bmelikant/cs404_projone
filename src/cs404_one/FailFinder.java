@@ -18,11 +18,17 @@ import java.util.TimeZone;
 public class FailFinder 
 {
     private ArrayList<LoginAttempt> myFailedLogins;
+    /////////////////////NEW//////////////////////
+    private ArrayList<String> myBlackList;
+    /////////////////////NEW//////////////////////
     public ArrayList<String> uniqueNames;
     public FailFinder(FailedLoginList f) 
     {
         myFailedLogins = f.failedLogins;
         uniqueNames = new ArrayList();
+        //////////////////NEW////////////////////////
+        myBlackList = new ArrayList();
+        /////////////////NEW////////////////////////
         loadUniqueNames();
     }
 //Finds all of the unique names in the log.
@@ -67,17 +73,32 @@ public class FailFinder
         for (int i = 0; i < myFailedLogins.size(); i++) 
         {
             if (myFailedLogins.get(i).loginid.equals(loggedNames)) 
+              
             {
 
                 if (tempNum == 0) 
                 {
                     tempNum = myFailedLogins.get(i).datetime.getTimeInMillis();
-                    System.out.println("setting first number: " + tempNum);
+                    System.out.println("setting first number: " + tempNum); 
+                    /////////////////////////NEW///////////////////////////////////
+                    if ((tempNum +2)-tempNum > 300000)
+                    {
+                    myBlackList.add(myFailedLogins.get(i).loginid);
+                    //System.out.println(myBlackList + "Blacklisted from the start!!!");
+                    }                                        
+                    ////////////////////////////NEW////////////////////////////////
                 } else
                     
                 {
                     long tempResult = (myFailedLogins.get(i).datetime.getTimeInMillis() - tempNum);
                     System.out.println("The real number in milliseconds from the first entry is " + (tempResult));
+                    ////////////////////////////NEW////////////////////////////////
+                    if (( tempResult +2)- tempResult > 300000);
+                    {
+                    myBlackList.add(myFailedLogins.get(i).loginid);
+                    System.out.println(myBlackList + "Has been blacklisted.");                                        
+                    }                                        
+                    ///////////////////////////NEW/////////////////////////////////
                 }
             }
         }        
@@ -86,7 +107,8 @@ public class FailFinder
 //Simply shows all of the names (each instance) in the failed login list.
     public void showAllNames() 
     {
-        for (int i = 0; i < uniqueNames.size(); i++) {
+        for (int i = 0; i < uniqueNames.size(); i++) 
+        {
             showRecord(showName(i));
         }
     }
