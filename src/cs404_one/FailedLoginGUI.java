@@ -237,6 +237,21 @@ public class FailedLoginGUI extends javax.swing.JFrame
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
+        // test code for FailFinder class
+        /*
+        FailedLoginList fll = new FailedLoginList ("owncloud.log");
+        fll.readLogFile();
+        
+        FailFinder ff = new FailFinder (fll.getFailedLogins());
+        ff.processFails ();
+      
+        for (int i = 0; i < ff.usernameCount(); i++) {
+            
+            ff.getUsernameAt (i);
+        }
+        */
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
