@@ -14,102 +14,90 @@ import java.util.TimeZone;
  *
  * @author Dolan
  */
+
 //Class to be called in main.
-public class FailFinder 
-{
-    private ArrayList<LoginAttempt> myFailedLogins;
-    /////////////////////NEW//////////////////////
-    private ArrayList<String> myBlackList;
-    /////////////////////NEW//////////////////////
-    public ArrayList<String> uniqueNames;
-    public FailFinder(FailedLoginList f) 
-    {
-        myFailedLogins = f.getFailedLogins();
-        uniqueNames = new ArrayList();
-        //////////////////NEW////////////////////////
-        myBlackList = new ArrayList();
-        /////////////////NEW////////////////////////
-        loadUniqueNames();
-    }
-    
-    //Finds all of the unique names in the log.
-    public void loadUniqueNames() 
-    {
-        uniqueNames.add(myFailedLogins.get(0).loginid);
-        for (int i = 1; i < myFailedLogins.size(); i++) 
-        {
-            if (!uniqueNames.contains(myFailedLogins.get(i).loginid)) 
-            {
-                uniqueNames.add(myFailedLogins.get(i).loginid);
-            }
-        }
-    } // end get unique names
-    
-//Shows all of the names with failed logins.
-    public String showName(int n) 
-    {
-        return uniqueNames.get(n);
-    }
-    
-//Shows user name and time of the failed login.
-    public void showRecord(String loggedNames) 
-    {
-        for (int i = 0; i < myFailedLogins.size(); i++) 
-        {
-            if (myFailedLogins.get(i).loginid.equals(loggedNames)) 
-            {
-                System.out.println("Name: " + myFailedLogins.get(i).loginid +
-                        ",  " + myFailedLogins.get(i).datetime.getTime());
-            }
-        }
-    }
-    
-//Displays datetime of first entry (unique name)  converted to milliseconds.
-//Then displays the elapsed time (in milliseconds) for each of the following entries.    
-    public void showTimes(String loggedNames) 
-    {
-        Long tempNum = 0L;
+class FailFinder {
 
-        for (int i = 0; i < myFailedLogins.size(); i++) 
-        {
-            if (myFailedLogins.get(i).loginid.equals(loggedNames)) 
-              
-            {
-
-                if (tempNum == 0) 
-                {
-                    tempNum = myFailedLogins.get(i).datetime.getTimeInMillis();
-                    System.out.println("setting first number: " + tempNum); 
-                    /////////////////////////NEW///////////////////////////////////
-                    if ((tempNum +2)-tempNum > 300000)
-                    {
-                    myBlackList.add(myFailedLogins.get(i).loginid);
-                    //System.out.println(myBlackList + "Blacklisted from the start!!!");
-                    }                                        
-                    ////////////////////////////NEW////////////////////////////////
-                } else
-                    
-                {
-                    long tempResult = (myFailedLogins.get(i).datetime.getTimeInMillis() - tempNum);
-                    System.out.println("The real number in milliseconds from the first entry is " + (tempResult));
-                    ////////////////////////////NEW////////////////////////////////
-                    if (( tempResult +2)- tempResult > 300000);
-                    {
-                    myBlackList.add(myFailedLogins.get(i).loginid);
-                    System.out.println(myBlackList + "Has been blacklisted.");                                        
-                    }                                        
-                    ///////////////////////////NEW/////////////////////////////////
-                }
-            }
-        }        
-    }
-    
-//Simply shows all of the names (each instance) in the failed login list.
-    public void showAllNames() 
-    {
-        for (int i = 0; i < uniqueNames.size(); i++) 
-        {
-            showRecord(showName(i));
+	private ArrayList<LoginAttempt> failedLogins;
+	private ArrayList<String> blacklisted_users;
+	private ArrayList<String> ip_addrs;
+	
+	public FailFinder (ArrayList<LoginAttempt> loginList) {
+	
+		blacklisted_users = new ArrayList<>();
+		ip_addrs = new ArrayList<>();
+		
+		failedLogins = loginList;
+	}
+	
+	public void processFails () {
+	
+		// get blacklisted users
+		for (int i = 0; i < failedLogins.size (); i++) {
+		
+			Long logtime = failedLogins.get(i).datetime.getTimeInMillis();
+			Long addfivemins = logtime + 300000;
+			
+			// process the current failed login
+			String user = failedLogins.get(i).loginid;
+                        
+                        if (blacklisted_users.contains(user))
+                            continue;
+                        
+			int failcount = 0;
+			
+			// sub loop: find failed logins for this user
+			for (int j = i+1; j < failedLogins.size (); j++) {
+			
+				// if this is the same user, check the timestamp
+				String nextuser = failedLogins.get(j).loginid;
+				
+				if (nextuser.equals (user)) {
+				
+					Long comparetime = failedLogins.get(j).datetime.getTimeInMillis();
+					
+					// failed logins within five minutes should increase by one
+					if (comparetime < addfivemins)
+						failcount++;
+						
+					if (failcount >= 2) {
+					
+						blacklisted_users.add (user);
+						break;
+					}
+				}
+			}
+		}
+		
+		// get failed ip addresses
+		for (int i = 0; i < blacklisted_users.size (); i++) {
+		
+			String user_ips = "";
+			
+			// find any ip addresses for the blacklisted user
+			for (int j = 0; j < failedLogins.size(); j++) {
+			
+                                if (user_ips.contains (failedLogins.get(j).ipaddr))
+                                    continue;
+                                
+				if (blacklisted_users.get(i).equals (failedLogins.get(j).loginid))
+					user_ips += failedLogins.get(j).ipaddr + (char)(10);
+			}
+                        
+                        ip_addrs.add (user_ips);
+		}
+                
+                // print out the data lists
+                for (int i = 0; i < blacklisted_users.size(); i++)
+                    System.out.println ("Blacklisted: " + blacklisted_users.get(i));
+                
+                for (int i = 0; i < ip_addrs.size(); i++)
+                    System.out.println ("IP Addresses: " + ip_addrs.get(i) + "\n\n");
         }
-    }
-} // end
+	
+        public int      usernameCount   ()      { return blacklisted_users.size(); }
+	public String   getUsernameAt   (int i) { return blacklisted_users.get(i); }
+	public String   getUserIPAddrs 	(int i) { return ip_addrs.get(i); }
+	
+	// private void loadUniqueNames () {}
+}
