@@ -7,6 +7,8 @@
         <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jFileChooser1.addChoosableFileFilter(new FileNameExtensionFilter(&quot;log file&quot;, &quot;log&quot;));"/>
       </AuxValues>
     </Component>
+    <Component class="javax.swing.JFileChooser" name="jFileChooser2">
+    </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1">
@@ -34,6 +36,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Reset"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jResetMenuItemActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jCloseMenuItem">
               <Properties>
@@ -42,6 +47,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Close Program"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCloseMenuItemActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>

@@ -48,6 +48,7 @@ public class FailedLoginGUI extends javax.swing.JFrame
     private void initComponents() {
 
         jFileChooser1 = new javax.swing.JFileChooser();
+        jFileChooser2 = new javax.swing.JFileChooser();
         jTextField1 = new javax.swing.JTextField();
         jBrowseButton = new javax.swing.JButton();
         jFindButton = new javax.swing.JButton();
@@ -123,10 +124,20 @@ public class FailedLoginGUI extends javax.swing.JFrame
 
         jResetMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, 0));
         jResetMenuItem.setText("Reset");
+        jResetMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jResetMenuItemActionPerformed(evt);
+            }
+        });
         jMenu1.add(jResetMenuItem);
 
         jCloseMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, 0));
         jCloseMenuItem.setText("Close Program");
+        jCloseMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCloseMenuItemActionPerformed(evt);
+            }
+        });
         jMenu1.add(jCloseMenuItem);
 
         jMenuBar1.add(jMenu1);
@@ -173,7 +184,14 @@ public class FailedLoginGUI extends javax.swing.JFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void jExportMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExportMenuItemActionPerformed
-        
+        File file;
+        if(evt.getSource() == jExportMenuItem)
+        {
+            jFileChooser2.setFileSelectionMode(1);
+            int returnVal = jFileChooser2.showOpenDialog(this);
+        }
+        file = (jFileChooser2.getCurrentDirectory());
+        //file = jFileChooser2.setFileSelectionMode(1);
     }//GEN-LAST:event_jExportMenuItemActionPerformed
 
     private void jBrowseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBrowseButtonActionPerformed
@@ -207,6 +225,11 @@ public class FailedLoginGUI extends javax.swing.JFrame
 
     private void jFindButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFindButtonActionPerformed
         
+        jTable1.setValueAt("1",0,0);
+        jTable1.setValueAt("2",0,1);
+        jTable1.setValueAt("3",1,0);
+        jTable1.setValueAt("4",1,1);
+        
         //Code will be put here for getting the size and adjusting the table to suit
         /*
             if(jTable1.getRowCount() < FailedLoginListObject.getSize())
@@ -232,6 +255,18 @@ public class FailedLoginGUI extends javax.swing.JFrame
 //                //jTable1.setValueAt(FailedLoginListObject.getAddress(i), row, 1);
 //        }
     }//GEN-LAST:event_jFindButtonActionPerformed
+
+    private void jResetMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jResetMenuItemActionPerformed
+        for(int cell = 0; cell < jTable1.getRowCount(); cell++)
+        {
+            jTable1.setValueAt("", cell, 0);
+            jTable1.setValueAt("", cell, 1);
+        }
+    }//GEN-LAST:event_jResetMenuItemActionPerformed
+
+    private void jCloseMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCloseMenuItemActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jCloseMenuItemActionPerformed
 
     /**
      * @param args the command line arguments
@@ -273,6 +308,7 @@ public class FailedLoginGUI extends javax.swing.JFrame
     private javax.swing.JMenuItem jCloseMenuItem;
     private javax.swing.JMenuItem jExportMenuItem;
     private javax.swing.JFileChooser jFileChooser1;
+    private javax.swing.JFileChooser jFileChooser2;
     private javax.swing.JButton jFindButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
