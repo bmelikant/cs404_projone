@@ -6,6 +6,11 @@
 package cs404_one;
 
 import java.io.File;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
@@ -23,7 +28,10 @@ public class FailedLoginGUI extends javax.swing.JFrame
     
     // FailedLoginList loginList = new FailedLoginList (filename);
     // loginList.processLogs ();
-    
+    File file;
+    FailedLoginList loginList;
+    private boolean browsed = false;
+    private boolean canExport = false;
     // FailFinder processedNames = new FailFinder (loginList);
     // processedNames.processTimes ();      // or whatever Dolan decides for this method name
     // int listSize = processedNames.getSize () // or however Dolan decides to present this data
@@ -48,6 +56,10 @@ public class FailedLoginGUI extends javax.swing.JFrame
     private void initComponents() {
 
         jFileChooser1 = new javax.swing.JFileChooser();
+        jDialog1 = new javax.swing.JDialog();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jFileChooser2 = new javax.swing.JFileChooser();
         jTextField1 = new javax.swing.JTextField();
         jBrowseButton = new javax.swing.JButton();
@@ -64,6 +76,46 @@ public class FailedLoginGUI extends javax.swing.JFrame
 
         jFileChooser1.addChoosableFileFilter(new FileNameExtensionFilter("log file", "log"));
 
+        jDialog1.setMinimumSize(new java.awt.Dimension(545, 120));
+        jDialog1.setModal(true);
+
+        jLabel2.setText("Please make sure that no programs are using the csv file if you have exported previously. ");
+        jLabel2.setToolTipText("");
+
+        jLabel3.setText("This could cause an error with the program.");
+
+        jButton1.setText("OK");
+
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog1Layout.createSequentialGroup()
+                .addContainerGap(61, Short.MAX_VALUE)
+                .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog1Layout.createSequentialGroup()
+                        .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addGroup(jDialog1Layout.createSequentialGroup()
+                                .addGap(112, 112, 112)
+                                .addComponent(jLabel3)))
+                        .addGap(50, 50, 50))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog1Layout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(235, 235, 235))))
+        );
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addContainerGap(46, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Failed Login Finder");
 
@@ -78,6 +130,7 @@ public class FailedLoginGUI extends javax.swing.JFrame
         });
 
         jFindButton.setText("Find Logins");
+        jFindButton.setEnabled(false);
         jFindButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jFindButtonActionPerformed(evt);
@@ -114,6 +167,7 @@ public class FailedLoginGUI extends javax.swing.JFrame
 
         jExportMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, 0));
         jExportMenuItem.setText("Export to CSV");
+        jExportMenuItem.setEnabled(false);
         jExportMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jExportMenuItemActionPerformed(evt);
@@ -184,13 +238,63 @@ public class FailedLoginGUI extends javax.swing.JFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void jExportMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExportMenuItemActionPerformed
-        File file;
-        if(evt.getSource() == jExportMenuItem)
+        jDialog1.setVisible(true);
+        if(canExport)
         {
-            jFileChooser2.setFileSelectionMode(1);
-            int returnVal = jFileChooser2.showOpenDialog(this);
+            File file;
+            if(evt.getSource() == jExportMenuItem)
+            {
+                jFileChooser2.setFileSelectionMode(1);
+                int returnVal = jFileChooser2.showOpenDialog(this);
+                if(returnVal == jFileChooser2.APPROVE_OPTION)
+                {
+                    String fileName = jFileChooser2.getSelectedFile().toString() + "\\file.csv";
+                    System.out.println(fileName);
+                    BufferedWriter buffWrite = null;
+                    FileWriter fileWrite = null;
+
+                    try
+                    {
+                        fileWrite = new FileWriter(fileName);
+                        buffWrite = new BufferedWriter(fileWrite);
+                        //replace 2 with the listSize variable.  Using rowCount will result in error because of null values
+                        for(int i = 0; i < jTable1.getRowCount(); i++)
+                        {
+                            buffWrite.write(jTable1.getValueAt(i, 0).toString() + ", " + jTable1.getValueAt(i, 1).toString());
+                        }
+                    }
+                    catch(IOException e)
+                    {
+                        e.printStackTrace();
+                    }
+                    finally
+                    {
+                        try
+                        {
+                            if(buffWrite != null)
+                            {
+                                buffWrite.close();
+                            }
+
+                            if(fileWrite != null)
+                            {
+                                fileWrite.close();
+                            }
+                        }
+                        catch(IOException f)
+                        {
+                            f.printStackTrace();
+                        }
+
+
+                    }
+                }
+            }
+
+            
         }
-        file = (jFileChooser2.getCurrentDirectory());
+        
+        
         //file = jFileChooser2.setFileSelectionMode(1);
     }//GEN-LAST:event_jExportMenuItemActionPerformed
 
@@ -198,9 +302,19 @@ public class FailedLoginGUI extends javax.swing.JFrame
         if(evt.getSource() == jBrowseButton)
         {
             int returnVal = jFileChooser1.showOpenDialog(this);
+            if(returnVal == jFileChooser1.APPROVE_OPTION)
+            {
+                file = jFileChooser1.getSelectedFile();
+                browsed = true;
+                jFindButton.setEnabled(true);
+                jTextField1.setText(file.toString());
+                jBrowseButton.setEnabled(false);
+            }
+            
         }
         
-        File file = jFileChooser1.getSelectedFile();
+        
+        
         
         //This will send the file to FailedLoginList to be worked on. 
         //FailedLoginListObject.setFile(file);  
@@ -225,10 +339,58 @@ public class FailedLoginGUI extends javax.swing.JFrame
 
     private void jFindButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFindButtonActionPerformed
         
-        jTable1.setValueAt("1",0,0);
-        jTable1.setValueAt("2",0,1);
-        jTable1.setValueAt("3",1,0);
-        jTable1.setValueAt("4",1,1);
+        if(evt.getSource() == jFindButton)
+        {
+            //int returnVal = jFileChooser1.showOpenDialog(this);
+            if(browsed)
+            {
+                
+                loginList = new FailedLoginList(jTextField1.getText());
+                loginList.readLogFile();
+                
+                FailFinder processedNames = new FailFinder(loginList.getFailedLogins());
+                
+                processedNames.processFails();
+                
+                    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+                    boolean removeRows = true;
+                    
+                    while(removeRows)
+                    {
+                        if(jTable1.getRowCount() > 0)
+                        {
+                            model.removeRow(jTable1.getRowCount()-1);
+                        }
+                        else
+                        {
+                            removeRows = false;
+                        }
+                    }
+                    
+                    while(jTable1.getRowCount() < processedNames.usernameCount())
+                    {
+                          model.addRow(new Object[]{null, null}); 
+                    }
+                
+                for(int i = 0; i < processedNames.usernameCount(); i++)
+                {
+                    jTable1.setValueAt(processedNames.getUsernameAt(i), i, 0);
+                }
+                
+                for(int i = 0; i < processedNames.usernameCount(); i++)
+                {
+                    jTable1.setValueAt(processedNames.getUserIPAddrs(i), i, 1);
+                }
+                
+                canExport = true;
+                jExportMenuItem.setEnabled(true);
+            }
+        }
+        
+//        jTable1.setValueAt("1",0,0);
+//        jTable1.setValueAt("2",0,1);
+//        jTable1.setValueAt("3",1,0);
+//        jTable1.setValueAt("4",1,1);
         
         //Code will be put here for getting the size and adjusting the table to suit
         /*
@@ -262,6 +424,12 @@ public class FailedLoginGUI extends javax.swing.JFrame
             jTable1.setValueAt("", cell, 0);
             jTable1.setValueAt("", cell, 1);
         }
+        
+        canExport = false;
+        jExportMenuItem.setEnabled(false);
+        jBrowseButton.setEnabled(true);
+        jFindButton.setEnabled(false);
+        jTextField1.setText("");
     }//GEN-LAST:event_jResetMenuItemActionPerformed
 
     private void jCloseMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCloseMenuItemActionPerformed
@@ -320,12 +488,16 @@ public class FailedLoginGUI extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBrowseButton;
+    private javax.swing.JButton jButton1;
     private javax.swing.JMenuItem jCloseMenuItem;
+    private javax.swing.JDialog jDialog1;
     private javax.swing.JMenuItem jExportMenuItem;
     private javax.swing.JFileChooser jFileChooser1;
     private javax.swing.JFileChooser jFileChooser2;
     private javax.swing.JButton jFindButton;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jResetMenuItem;
