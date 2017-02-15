@@ -190,12 +190,24 @@ public class FailedLoginGUI extends javax.swing.JFrame
                 //jFileChooser2.setFileSelectionMode(1);
                 jFileChooser2.setCurrentDirectory(new File ("file.csv"));
                 
-                int returnVal = jFileChooser2.showOpenDialog(this);
+                int returnVal = jFileChooser2.showSaveDialog(this);
                 
                 if(returnVal == jFileChooser2.APPROVE_OPTION)
                 {
+                    String fileName = "";
                     
-                    String fileName = jFileChooser2.getSelectedFile().toString();
+                    if (jFileChooser2.getFileFilter().accept(jFileChooser2.getSelectedFile())) {
+                        
+                        System.out.println ("Found allowed extension, not converting...");
+                        fileName = jFileChooser2.getSelectedFile().toString ();
+                    }
+                    
+                    else if (!jFileChooser2.getSelectedFile().toString().endsWith(".csv") && jFileChooser2.getFileFilter().accept(new File("1.csv"))) {
+                        
+                        System.out.println ("Invalid extension for current filter, converting...");
+                        fileName = jFileChooser2.getSelectedFile().toString() + ".csv";
+                    }
+                    
                     System.out.println(fileName);
                     BufferedWriter buffWrite = null;
                     FileWriter fileWrite = null;
