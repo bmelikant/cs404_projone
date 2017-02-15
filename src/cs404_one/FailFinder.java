@@ -63,29 +63,12 @@ class FailFinder {
 					if (failcount >= 2) {
 					
 						blacklisted_users.add (user);
+                                                ip_addrs.add (failedLogins.get(i).ipaddr);
 						break;
 					}
 				}
 			}
-		}
-		
-		// get failed ip addresses
-		for (int i = 0; i < blacklisted_users.size (); i++) {
-		
-			String user_ips = "";
-			
-			// find any ip addresses for the blacklisted user
-			for (int j = 0; j < failedLogins.size(); j++) {
-			
-                                if (user_ips.contains (failedLogins.get(j).ipaddr))
-                                    continue;
-                                
-				if (blacklisted_users.get(i).equals (failedLogins.get(j).loginid))
-					user_ips += failedLogins.get(j).ipaddr + (char)(10);
-			}
-                        
-                        ip_addrs.add (user_ips);
-		}
+                }
                 
                 // print out the data lists
                 for (int i = 0; i < blacklisted_users.size(); i++)
