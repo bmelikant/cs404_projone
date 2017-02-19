@@ -79,5 +79,5 @@ class FailFinder {
 	public String   getUsernameAt   (int i) { return blacklisted_users.get(i); }
 	public String   getUserIPAddrs 	(int i) { return ip_addrs.get(i); }
 	
-	// private void loadUniqueNames () {}
+	
 }
